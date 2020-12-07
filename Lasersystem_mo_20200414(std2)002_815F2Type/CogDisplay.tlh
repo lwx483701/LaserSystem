@@ -1,0 +1,788 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (bc60ca96).
+//
+// CogDisplay.tlh
+//
+// C++ source equivalent of Win32 type library Cognex_6_2_32-bit\CogDisplay.ocx
+// compiler-generated file created 02/26/18 at 16:40:48 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Program Files\Cognex\VisionPro\bin\cogxstd.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("68a3e40c-8390-11d4-9754-0060089571fc"))
+/* dual interface */ ICogStaticGraphicsContainer;
+struct __declspec(uuid("52d6a020-84ed-11d4-9754-0060089571fc"))
+/* dual interface */ ICogInteractiveGraphicsContainer;
+struct __declspec(uuid("1daaadfc-adf3-4b8f-b8cf-1a010ca4e551"))
+/* dual interface */ ICogDisplay;
+struct __declspec(uuid("13ee5dbe-2597-4588-8639-55f4fd857d2e"))
+/* dispinterface */ ICogDisplayEvents;
+struct __declspec(uuid("1c91400c-b76a-46d8-9553-0f40ac1d43d0"))
+/* dual interface */ ICogDisplayCoordinateSpaceData;
+struct __declspec(uuid("bbba11e5-15bd-46fb-a763-b20268bb2d77"))
+/* interface */ ICogGraphicsFrameEvents;
+struct __declspec(uuid("090dc4b1-51ea-4dcb-b9f7-ba3339d143ab"))
+/* dual interface */ ICogGraphicsFrame;
+struct __declspec(uuid("d50c684a-5a58-4a2a-af79-86a8ec574832"))
+/* dual interface */ ICogDisplayNoImageReference;
+struct /* coclass */ CogDisplayNoImageReference;
+struct /* coclass */ CogDisplay;
+struct /* coclass */ CogGraphicsFrame;
+struct /* coclass */ CogStaticGraphicsContainer;
+struct /* coclass */ CogInteractiveGraphicsContainer;
+struct /* coclass */ CogDisplayCoordinateSpaceData;
+struct __declspec(uuid("43f133f2-dd66-47b2-b469-5d442a59b457"))
+/* interface */ ICogDisplayNoImageReference_Disp;
+struct __declspec(uuid("f3ff6cb6-6ef1-11d4-9751-0060089571fc"))
+/* interface */ ICogDisplay_Disp;
+struct __declspec(uuid("e9e95110-0e23-407f-9405-a1cd3d677fcf"))
+/* interface */ ICogGraphicsFrame_Disp;
+struct __declspec(uuid("124cf6b9-ec58-48c2-b436-0d8dae7b30cc"))
+/* interface */ ICogStaticGraphicsContainer_Disp;
+struct __declspec(uuid("c766c77a-953a-4bce-91c4-4113f6f76b1c"))
+/* interface */ ICogInteractiveGraphicsContainer_Disp;
+struct __declspec(uuid("14b16e03-aef2-4918-9257-524ac2400fc3"))
+/* interface */ ICogDisplayCoordinateSpaceData_Disp;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICogStaticGraphicsContainer, __uuidof(ICogStaticGraphicsContainer));
+_COM_SMARTPTR_TYPEDEF(ICogInteractiveGraphicsContainer, __uuidof(ICogInteractiveGraphicsContainer));
+_COM_SMARTPTR_TYPEDEF(ICogDisplay, __uuidof(ICogDisplay));
+_COM_SMARTPTR_TYPEDEF(ICogDisplayEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ICogDisplayCoordinateSpaceData, __uuidof(ICogDisplayCoordinateSpaceData));
+_COM_SMARTPTR_TYPEDEF(ICogGraphicsFrameEvents, __uuidof(ICogGraphicsFrameEvents));
+_COM_SMARTPTR_TYPEDEF(ICogGraphicsFrame, __uuidof(ICogGraphicsFrame));
+_COM_SMARTPTR_TYPEDEF(ICogDisplayNoImageReference, __uuidof(ICogDisplayNoImageReference));
+_COM_SMARTPTR_TYPEDEF(ICogDisplayNoImageReference_Disp, __uuidof(ICogDisplayNoImageReference_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogDisplay_Disp, __uuidof(ICogDisplay_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogGraphicsFrame_Disp, __uuidof(ICogGraphicsFrame_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogStaticGraphicsContainer_Disp, __uuidof(ICogStaticGraphicsContainer_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogInteractiveGraphicsContainer_Disp, __uuidof(ICogInteractiveGraphicsContainer_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogDisplayCoordinateSpaceData_Disp, __uuidof(ICogDisplayCoordinateSpaceData_Disp));
+
+//
+// Type library items
+//
+
+enum CogDisplayErrConstants
+{
+    e_CogDisplay_ZoomOutOfRange = -2147205120,
+    e_CogDisplay_NoSlaveFifos = -2147205119,
+    e_CogDisplay_NoAutoFifoSharing = -2147205118,
+    e_CogDisplay_InvalidChildSpace = -2147205117,
+    e_CogDisplay_StartStopNotReentrant = -2147205116,
+    e_CogDisplay_UnknownGroupName = -2147205115,
+    e_CogDisplay_InvalidColormap = -2147205114
+};
+
+enum CogDisplayMouseModeConstants
+{
+    cogDisplayMouseModePointer = 0,
+    cogDisplayMouseModePan = 1,
+    cogDisplayMouseModeZoomIn = 2,
+    cogDisplayMouseModeZoomOut = 3,
+    cogDisplayMouseModeUserDefined = 4
+};
+
+enum CogDisplayMouseCursorConstants
+{
+    cogDisplayMouseCursorPointer = 0,
+    cogDisplayMouseCursorAttention = 1,
+    cogDisplayMouseCursorPanUp = 2,
+    cogDisplayMouseCursorPanDown = 3,
+    cogDisplayMouseCursorZoomIn = 4,
+    cogDisplayMouseCursorZoomOut = 5,
+    cogDisplayMouseCursorUserDefined = 6
+};
+
+enum CogDisplayScalingMethodConstants
+{
+    cogDisplayScalingMethodInteger = 0,
+    cogDisplayScalingMethodContinuous = 1,
+    cogDisplayScalingMethodContinuousBilinear = 2
+};
+
+enum CogDisplayPanAnchorConstants
+{
+    cogDisplayPanAnchorAbsolute = 0,
+    cogDisplayPanAnchorRelative = 1
+};
+
+enum CogDisplayContentBitmapConstants
+{
+    cogDisplayContentBitmapImage = 0,
+    cogDisplayContentBitmapDisplay = 1,
+    cogDisplayContentBitmapCustom = 2
+};
+
+enum CogDisplayZOrderConstants
+{
+    cogDisplayZOrderFront = 0,
+    cogDisplayZOrderBack = 1
+};
+
+enum CogDisplayEventConstants
+{
+    cogDisplayEventMouseMove = 0,
+    cogDisplayEventLMouseDown = 1,
+    cogDisplayEventLMouseUp = 2,
+    cogDisplayEventLMouseDblClick = 3,
+    cogDisplayEventMMouseDown = 4,
+    cogDisplayEventMMouseUp = 5,
+    cogDisplayEventMMouseDblClick = 6,
+    cogDisplayEventRMouseDown = 7,
+    cogDisplayEventRMouseUp = 8,
+    cogDisplayEventRMouseDblClick = 9,
+    cogDisplayEventKeyDown = 10,
+    cogDisplayEventKeyUp = 11
+};
+
+enum CogDisplayGraphicsFrameStateConstants
+{
+    cogDisplayGraphicsFrameStateDisabled = 0,
+    cogDisplayGraphicsFrameStateReady = 1,
+    cogDisplayGraphicsFrameStateAttention = 2,
+    cogDisplayGraphicsFrameStateDragging = 3
+};
+
+struct __declspec(uuid("68a3e40c-8390-11d4-9754-0060089571fc"))
+ICogStaticGraphicsContainer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddList (
+        struct ICogGraphicCollection * Graphics,
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall Add (
+        struct ICogGraphic * Graphic,
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall get_ZOrderGroups (
+        struct ICogStringCollection * * ZCollection ) = 0;
+    virtual HRESULT __stdcall MoveToFront (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall MoveToBack (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall MoveForward (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall MoveBackward (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall Remove (
+        BSTR GroupName ) = 0;
+};
+
+struct __declspec(uuid("52d6a020-84ed-11d4-9754-0060089571fc"))
+ICogInteractiveGraphicsContainer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddList (
+        struct ICogGraphicInteractiveCollection * Graphics,
+        BSTR GroupName,
+        VARIANT_BOOL CheckForDuplicates ) = 0;
+    virtual HRESULT __stdcall Add (
+        struct ICogGraphicInteractive * Graphic,
+        BSTR GroupName,
+        VARIANT_BOOL CheckForDuplicates ) = 0;
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct ICogGraphicInteractive * * pvarRet ) = 0;
+    virtual HRESULT __stdcall MoveToFront (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall MoveToBack (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall MoveForward (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall MoveBackward (
+        BSTR GroupName ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall Remove (
+        VARIANT IndexOrGroupName ) = 0;
+    virtual HRESULT __stdcall get_ZOrderGroups (
+        struct ICogStringCollection * * ZCollection ) = 0;
+    virtual HRESULT __stdcall FindItem (
+        VARIANT ObjectOrGroupName,
+        enum CogDisplayZOrderConstants SearchOrigin,
+        long * Index ) = 0;
+};
+
+enum CogDisplayStateIDs
+{
+    cogDisplay_BackColor = -501,
+    cogDisplay_Image = 16859140,
+    cogDisplay_HorizontalScrollBar = 16859141,
+    cogDisplay_VerticalScrollBar = 16859142,
+    cogDisplay_PopupMenu = 16859143,
+    cogDisplay_DrawingEnabled = 16859150,
+    cogDisplay_PanX = 16859154,
+    cogDisplay_PanY = 16859155,
+    cogDisplay_Zoom = 16859156,
+    cogDisplay_MouseMode = 16859165,
+    cogDisplay_ScalingMethod = 16859168,
+    cogDisplay_TouchDistance = 16859171,
+    cogDisplay_MultiSelectionEnabled = 16859172,
+    cogDisplay_RenderEngine = 16859174,
+    cogDisplay_LiveDisplayRunning = 16859178,
+    cogDisplay_GridColor = 16859181,
+    cogDisplay_SubPixelGridColor = 16859182,
+    cogDisplay_GridEnabled = 16859183,
+    cogDisplay_SubPixelGridEnabled = 16859184,
+    cogDisplay_ImagePanAnchor = 16859185,
+    cogDisplay_ScreenPanAnchor = 16859186,
+    cogDisplay_PanXMin = 16859187,
+    cogDisplay_PanXMax = 16859189,
+    cogDisplay_PanYMin = 16859190,
+    cogDisplay_PanYMax = 16859191,
+    cogDisplay_InteractiveGraphicTipsEnabled = 16859196,
+    cogDisplay_MouseCursor = 16859198,
+    cogDisplay_Selection = 16859214,
+    cogDisplay_AttentionGraphic = 16859241,
+    cogDisplay_Enabled = 16859267,
+    cogDisplay_AutoFit = 16859268,
+    cogDisplay_Image8GreyColorMap = 16859271,
+    cogDisplay_Image16GreyColorMap = 16859277,
+    cogDisplay_ClearImage16GreyColorMap = 16859278
+};
+
+struct __declspec(uuid("1daaadfc-adf3-4b8f-b8cf-1a010ca4e551"))
+ICogDisplay : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall get_Image (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Image (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_HorizontalScrollBar (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HorizontalScrollBar (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_VerticalScrollBar (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_VerticalScrollBar (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_PopupMenu (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_PopupMenu (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_PanX (
+        double * PanX ) = 0;
+    virtual HRESULT __stdcall put_PanX (
+        double PanX ) = 0;
+    virtual HRESULT __stdcall get_PanY (
+        double * PanY ) = 0;
+    virtual HRESULT __stdcall put_PanY (
+        double PanY ) = 0;
+    virtual HRESULT __stdcall get_Zoom (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Zoom (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_ScalingMethod (
+        enum CogDisplayScalingMethodConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_ScalingMethod (
+        enum CogDisplayScalingMethodConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_DrawingEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_DrawingEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_MouseMode (
+        enum CogDisplayMouseModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_MouseMode (
+        enum CogDisplayMouseModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_MouseCursor (
+        enum CogDisplayMouseCursorConstants Cursor,
+        IPictureDisp * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_MouseCursor (
+        enum CogDisplayMouseCursorConstants Cursor,
+        IPictureDisp * pVal ) = 0;
+    virtual HRESULT __stdcall get_LiveDisplayRunning (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Fit (
+        VARIANT_BOOL GraphicsToo ) = 0;
+    virtual HRESULT __stdcall StartLiveDisplay (
+        IDispatch * AcqFifo,
+        VARIANT_BOOL Own ) = 0;
+    virtual HRESULT __stdcall StopLiveDisplay ( ) = 0;
+    virtual HRESULT __stdcall GetScreenPanAnchor (
+        double * X,
+        double * Y,
+        enum CogDisplayPanAnchorConstants * Method ) = 0;
+    virtual HRESULT __stdcall SetScreenPanAnchor (
+        double X,
+        double Y,
+        enum CogDisplayPanAnchorConstants Method ) = 0;
+    virtual HRESULT __stdcall GetImagePanAnchor (
+        double * X,
+        double * Y,
+        enum CogDisplayPanAnchorConstants * Method ) = 0;
+    virtual HRESULT __stdcall SetImagePanAnchor (
+        double X,
+        double Y,
+        enum CogDisplayPanAnchorConstants Method ) = 0;
+    virtual HRESULT __stdcall get_PanXMin (
+        double * XMin ) = 0;
+    virtual HRESULT __stdcall get_PanXMax (
+        double * XMax ) = 0;
+    virtual HRESULT __stdcall get_PanYMin (
+        double * YMin ) = 0;
+    virtual HRESULT __stdcall get_PanYMax (
+        double * YMax ) = 0;
+    virtual HRESULT __stdcall put_RenderEngine (
+        BSTR bstrProgID ) = 0;
+    virtual HRESULT __stdcall get_RenderEngine (
+        BSTR * bstrProgID ) = 0;
+    virtual HRESULT __stdcall QueryRenderCaps (
+        BSTR RenderCapability,
+        IDispatch * * CapabilityIfc ) = 0;
+    virtual HRESULT __stdcall GetTransform (
+        BSTR ToSpace,
+        BSTR FromSpace,
+        struct ICogTransform2D * * __MIDL_0011 ) = 0;
+    virtual HRESULT __stdcall get_UserDisplayTree (
+        struct ICogCoordinateSpaceTree * * pVal ) = 0;
+    virtual HRESULT __stdcall get_UserPixelTree (
+        struct ICogCoordinateSpaceTree * * pVal ) = 0;
+    virtual HRESULT __stdcall get_GridEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_GridEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_GridColor (
+        OLE_COLOR * pVal ) = 0;
+    virtual HRESULT __stdcall put_GridColor (
+        OLE_COLOR pVal ) = 0;
+    virtual HRESULT __stdcall get_SubPixelGridEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_SubPixelGridEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_SubPixelGridColor (
+        OLE_COLOR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SubPixelGridColor (
+        OLE_COLOR pVal ) = 0;
+    virtual HRESULT __stdcall get_StaticGraphics (
+        struct ICogStaticGraphicsContainer * * pVal ) = 0;
+    virtual HRESULT __stdcall get_InteractiveGraphics (
+        struct ICogInteractiveGraphicsContainer * * pVal ) = 0;
+    virtual HRESULT __stdcall get_TouchDistance (
+        long * screenDist ) = 0;
+    virtual HRESULT __stdcall put_TouchDistance (
+        long screenDist ) = 0;
+    virtual HRESULT __stdcall get_InteractiveGraphicTipsEnabled (
+        VARIANT_BOOL * Tips ) = 0;
+    virtual HRESULT __stdcall put_InteractiveGraphicTipsEnabled (
+        VARIANT_BOOL Tips ) = 0;
+    virtual HRESULT __stdcall get_MultiSelectionEnabled (
+        VARIANT_BOOL * MultiSelect ) = 0;
+    virtual HRESULT __stdcall put_MultiSelectionEnabled (
+        VARIANT_BOOL MultiSelect ) = 0;
+    virtual HRESULT __stdcall get_LostAndFound (
+        struct ICogGraphicCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Selection (
+        struct ICogGraphicInteractiveCollection * * __MIDL_0012 ) = 0;
+    virtual HRESULT __stdcall get_AttentionGraphic (
+        struct ICogGraphicInteractive * * Graphic ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_AutoFit (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_AutoFit (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_Image8GreyColorMap (
+        unsigned char GreyValue,
+        enum CogColorConstants pColor ) = 0;
+    virtual HRESULT __stdcall get_Image8GreyColorMap (
+        unsigned char GreyValue,
+        enum CogColorConstants * pColor ) = 0;
+    virtual HRESULT __stdcall put_Image16GreyColorMap (
+        SAFEARRAY * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Image16GreyColorMap (
+        SAFEARRAY * * pVal ) = 0;
+    virtual HRESULT __stdcall ClearImage16GreyColorMap ( ) = 0;
+    virtual HRESULT __stdcall CreateMapInfo (
+        struct ICogGraphicMapInfo * * ppVal ) = 0;
+    virtual HRESULT __stdcall CreateContentBitmap (
+        enum CogDisplayContentBitmapConstants Content,
+        struct ICogRectangle * ContentRect,
+        long BitmapSize,
+        IPictureDisp * * pVal ) = 0;
+};
+
+enum CogDisplayEventIDs
+{
+    cogDisplayEvents_Change = 7456,
+    cogDisplayEvents_MouseMove = 5206,
+    cogDisplayEvents_Click = 5207,
+    cogDisplayEvents_DblClick = 5208,
+    cogDisplayEvents_MouseDown = 5209,
+    cogDisplayEvents_MouseUp = 5210,
+    cogDisplayEvents_KeyPress = 5211,
+    cogDisplayEvents_KeyUp = 5212,
+    cogDisplayEvents_KeyDown = 5213,
+    cogDisplayEvents_DraggingStopped = 5215
+};
+
+struct __declspec(uuid("13ee5dbe-2597-4588-8639-55f4fd857d2e"))
+ICogDisplayEvents : IDispatch
+{};
+
+enum CogDisplayCoordinateSpaceDataStateIDs
+{
+    cogDisplayCoordinateSpaceData_Image = 16859250,
+    cogDisplayCoordinateSpaceData_DisplayFromPixelTransform = 16859251,
+    cogDisplayCoordinateSpaceData_UserDisplayTree = 16859252,
+    cogDisplayCoordinateSpaceData_UserPixelTree = 16859253,
+    cogDisplayCoordinateSpaceData_DisplayFromPercentTransform = 16859273,
+    cogDisplayCoordinateSpaceData_SelectedSpaceName = 16859255,
+    cogDisplayCoordinateSpaceData_CoordinateSpaceChange = 16859256,
+    cogDisplayCoordinateSpaceData_CoordinateSpaceAdd = 16859176,
+    cogDisplayCoordinateSpaceData_CoordinateSpaceDelete = 16859179,
+    cogDisplayCoordinateSpaceData_CoordinateSpaceMove = 16859265
+};
+
+struct __declspec(uuid("1c91400c-b76a-46d8-9553-0f40ac1d43d0"))
+ICogDisplayCoordinateSpaceData : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Image (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Image (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_DisplayFromPixelTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_DisplayFromPixelTransform (
+        struct ICogTransform2D * pVal ) = 0;
+    virtual HRESULT __stdcall get_DisplayFromPercentTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_DisplayFromPercentTransform (
+        struct ICogTransform2D * pVal ) = 0;
+    virtual HRESULT __stdcall get_UserDisplayTree (
+        struct ICogCoordinateSpaceTree * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_UserDisplayTree (
+        struct ICogCoordinateSpaceTree * pVal ) = 0;
+    virtual HRESULT __stdcall get_UserPixelTree (
+        struct ICogCoordinateSpaceTree * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_UserPixelTree (
+        struct ICogCoordinateSpaceTree * pVal ) = 0;
+    virtual HRESULT __stdcall GetTransform (
+        BSTR ToSpace,
+        BSTR FromSpace,
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall FullyQualify (
+        BSTR InSpace,
+        BSTR * OutSpace ) = 0;
+};
+
+struct __declspec(uuid("bbba11e5-15bd-46fb-a763-b20268bb2d77"))
+ICogGraphicsFrameEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall InvalidGraphics (
+        long Ulx,
+        long Uly,
+        long Lrx,
+        long Lry,
+        VARIANT_BOOL NeedsErase ) = 0;
+    virtual HRESULT __stdcall ScreenEncloseRectChanged ( ) = 0;
+    virtual HRESULT __stdcall InteractiveStateChanged (
+        enum CogDisplayGraphicsFrameStateConstants NewState ) = 0;
+    virtual HRESULT __stdcall AttentionGraphicChanged (
+        struct ICogGraphicInteractive * NewGraphic ) = 0;
+    virtual HRESULT __stdcall DraggingStopped ( ) = 0;
+};
+
+struct __declspec(uuid("090dc4b1-51ea-4dcb-b9f7-ba3339d143ab"))
+ICogGraphicsFrame : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CoordinateSpaces (
+        struct ICogDisplayCoordinateSpaceData * * Spaces ) = 0;
+    virtual HRESULT __stdcall put_CoordinateSpaces (
+        struct ICogDisplayCoordinateSpaceData * Spaces ) = 0;
+    virtual HRESULT __stdcall Render (
+        long Sulx,
+        long Suly,
+        long Slrx,
+        long Slry,
+        struct ICogRenderContext * Context,
+        VARIANT_BOOL UseCachedHint ) = 0;
+    virtual HRESULT __stdcall InvalidationNotification (
+        struct ICogGraphicsFrameEvents * EventSink ) = 0;
+    virtual HRESULT __stdcall get_LostAndFound (
+        struct ICogGraphicCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_StaticGraphics (
+        struct ICogStaticGraphicsContainer * * pVal ) = 0;
+    virtual HRESULT __stdcall get_InteractiveGraphics (
+        struct ICogInteractiveGraphicsContainer * * pVal ) = 0;
+    virtual HRESULT __stdcall get_TouchDistance (
+        long * screenDist ) = 0;
+    virtual HRESULT __stdcall put_TouchDistance (
+        long screenDist ) = 0;
+    virtual HRESULT __stdcall get_MultiSelectionEnabled (
+        VARIANT_BOOL * MultiSelect ) = 0;
+    virtual HRESULT __stdcall put_MultiSelectionEnabled (
+        VARIANT_BOOL MultiSelect ) = 0;
+    virtual HRESULT __stdcall ProcessEvent (
+        enum CogDisplayEventConstants Event,
+        long KeyState,
+        long ButtonState,
+        long Key,
+        long Mx,
+        long My ) = 0;
+    virtual HRESULT __stdcall get_InteractiveState (
+        enum CogDisplayGraphicsFrameStateConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_InteractiveState (
+        enum CogDisplayGraphicsFrameStateConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_AttentionGraphic (
+        struct ICogGraphicInteractive * * pVal ) = 0;
+    virtual HRESULT __stdcall GetScreenEncloseRect (
+        long * Left,
+        long * Top,
+        long * Right,
+        long * Bottom ) = 0;
+    virtual HRESULT __stdcall FitContent (
+        long DisplayWidth,
+        long DisplayHeight,
+        long ImgWidth,
+        long ImgHeight,
+        double DPAX,
+        double DPAY,
+        double IPAX,
+        double IPAY,
+        VARIANT_BOOL IntegerScale,
+        double * Zoom,
+        double * PanX,
+        double * PanY ) = 0;
+};
+
+struct __declspec(uuid("d50c684a-5a58-4a2a-af79-86a8ec574832"))
+ICogDisplayNoImageReference : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NoImageReferenceEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_NoImageReferenceEnabled (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("bc0ecc0d-dd66-47b2-b469-5d442a59b457"))
+CogDisplayNoImageReference;
+    // [ default ] interface ICogDisplayNoImageReference
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("0c009349-6ef1-11d4-9751-0060089571fc"))
+CogDisplay;
+    // [ default ] interface ICogDisplay
+    // interface IPersist
+    // interface IPersistPropertyBag
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogDisplayNoImageReference
+    // [ default, source ] dispinterface ICogDisplayEvents
+
+struct __declspec(uuid("1616aeef-0e23-407f-9405-a1cd3d677fcf"))
+CogGraphicsFrame;
+    // [ default ] interface ICogGraphicsFrame
+
+struct __declspec(uuid("edb30946-ec58-48c2-b436-0d8dae7b30cc"))
+CogStaticGraphicsContainer;
+    // [ default ] interface ICogStaticGraphicsContainer
+
+struct __declspec(uuid("38993885-953a-4bce-91c4-4113f6f76b1c"))
+CogInteractiveGraphicsContainer;
+    // [ default ] interface ICogInteractiveGraphicsContainer
+
+struct __declspec(uuid("eb4e91fc-aef2-4918-9257-524ac2400fc3"))
+CogDisplayCoordinateSpaceData;
+    // [ default ] interface ICogDisplayCoordinateSpaceData
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("43f133f2-dd66-47b2-b469-5d442a59b457"))
+ICogDisplayNoImageReference_Disp : ICogDisplayNoImageReference
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("f3ff6cb6-6ef1-11d4-9751-0060089571fc"))
+ICogDisplay_Disp : ICogDisplay
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("e9e95110-0e23-407f-9405-a1cd3d677fcf"))
+ICogGraphicsFrame_Disp : ICogGraphicsFrame
+{};
+
+struct __declspec(uuid("124cf6b9-ec58-48c2-b436-0d8dae7b30cc"))
+ICogStaticGraphicsContainer_Disp : ICogStaticGraphicsContainer
+{};
+
+struct __declspec(uuid("c766c77a-953a-4bce-91c4-4113f6f76b1c"))
+ICogInteractiveGraphicsContainer_Disp : ICogInteractiveGraphicsContainer
+{};
+
+struct __declspec(uuid("14b16e03-aef2-4918-9257-524ac2400fc3"))
+ICogDisplayCoordinateSpaceData_Disp : ICogDisplayCoordinateSpaceData
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CognexDisplay =
+    {0x0acbbd11,0x6e21,0x11d4,{0x97,0x51,0x00,0x60,0x08,0x95,0x71,0xfc}};
+extern "C" const GUID __declspec(selectany) IID_ICogStaticGraphicsContainer =
+    {0x68a3e40c,0x8390,0x11d4,{0x97,0x54,0x00,0x60,0x08,0x95,0x71,0xfc}};
+extern "C" const GUID __declspec(selectany) IID_ICogInteractiveGraphicsContainer =
+    {0x52d6a020,0x84ed,0x11d4,{0x97,0x54,0x00,0x60,0x08,0x95,0x71,0xfc}};
+extern "C" const GUID __declspec(selectany) IID_ICogDisplay =
+    {0x1daaadfc,0xadf3,0x4b8f,{0xb8,0xcf,0x1a,0x01,0x0c,0xa4,0xe5,0x51}};
+extern "C" const GUID __declspec(selectany) DIID_ICogDisplayEvents =
+    {0x13ee5dbe,0x2597,0x4588,{0x86,0x39,0x55,0xf4,0xfd,0x85,0x7d,0x2e}};
+extern "C" const GUID __declspec(selectany) IID_ICogDisplayCoordinateSpaceData =
+    {0x1c91400c,0xb76a,0x46d8,{0x95,0x53,0x0f,0x40,0xac,0x1d,0x43,0xd0}};
+extern "C" const GUID __declspec(selectany) IID_ICogGraphicsFrameEvents =
+    {0xbbba11e5,0x15bd,0x46fb,{0xa7,0x63,0xb2,0x02,0x68,0xbb,0x2d,0x77}};
+extern "C" const GUID __declspec(selectany) IID_ICogGraphicsFrame =
+    {0x090dc4b1,0x51ea,0x4dcb,{0xb9,0xf7,0xba,0x33,0x39,0xd1,0x43,0xab}};
+extern "C" const GUID __declspec(selectany) IID_ICogDisplayNoImageReference =
+    {0xd50c684a,0x5a58,0x4a2a,{0xaf,0x79,0x86,0xa8,0xec,0x57,0x48,0x32}};
+extern "C" const GUID __declspec(selectany) CLSID_CogDisplayNoImageReference =
+    {0xbc0ecc0d,0xdd66,0x47b2,{0xb4,0x69,0x5d,0x44,0x2a,0x59,0xb4,0x57}};
+extern "C" const GUID __declspec(selectany) CLSID_CogDisplay =
+    {0x0c009349,0x6ef1,0x11d4,{0x97,0x51,0x00,0x60,0x08,0x95,0x71,0xfc}};
+extern "C" const GUID __declspec(selectany) CLSID_CogGraphicsFrame =
+    {0x1616aeef,0x0e23,0x407f,{0x94,0x05,0xa1,0xcd,0x3d,0x67,0x7f,0xcf}};
+extern "C" const GUID __declspec(selectany) CLSID_CogStaticGraphicsContainer =
+    {0xedb30946,0xec58,0x48c2,{0xb4,0x36,0x0d,0x8d,0xae,0x7b,0x30,0xcc}};
+extern "C" const GUID __declspec(selectany) CLSID_CogInteractiveGraphicsContainer =
+    {0x38993885,0x953a,0x4bce,{0x91,0xc4,0x41,0x13,0xf6,0xf7,0x6b,0x1c}};
+extern "C" const GUID __declspec(selectany) CLSID_CogDisplayCoordinateSpaceData =
+    {0xeb4e91fc,0xaef2,0x4918,{0x92,0x57,0x52,0x4a,0xc2,0x40,0x0f,0xc3}};
+extern "C" const GUID __declspec(selectany) IID_ICogDisplayNoImageReference_Disp =
+    {0x43f133f2,0xdd66,0x47b2,{0xb4,0x69,0x5d,0x44,0x2a,0x59,0xb4,0x57}};
+extern "C" const GUID __declspec(selectany) IID_ICogDisplay_Disp =
+    {0xf3ff6cb6,0x6ef1,0x11d4,{0x97,0x51,0x00,0x60,0x08,0x95,0x71,0xfc}};
+extern "C" const GUID __declspec(selectany) IID_ICogGraphicsFrame_Disp =
+    {0xe9e95110,0x0e23,0x407f,{0x94,0x05,0xa1,0xcd,0x3d,0x67,0x7f,0xcf}};
+extern "C" const GUID __declspec(selectany) IID_ICogStaticGraphicsContainer_Disp =
+    {0x124cf6b9,0xec58,0x48c2,{0xb4,0x36,0x0d,0x8d,0xae,0x7b,0x30,0xcc}};
+extern "C" const GUID __declspec(selectany) IID_ICogInteractiveGraphicsContainer_Disp =
+    {0xc766c77a,0x953a,0x4bce,{0x91,0xc4,0x41,0x13,0xf6,0xf7,0x6b,0x1c}};
+extern "C" const GUID __declspec(selectany) IID_ICogDisplayCoordinateSpaceData_Disp =
+    {0x14b16e03,0xaef2,0x4918,{0x92,0x57,0x52,0x4a,0xc2,0x40,0x0f,0xc3}};
+
+#pragma pack(pop)

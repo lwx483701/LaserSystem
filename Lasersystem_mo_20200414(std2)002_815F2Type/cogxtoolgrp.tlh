@@ -1,0 +1,860 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (ad38268b).
+//
+// cogxtoolgrp.tlh
+//
+// C++ source equivalent of Win32 type library Cognex_6_2_32-bit\cogxtoolgrp.dll
+// compiler-generated file created 02/26/18 at 16:40:48 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Program Files\Cognex\VisionPro\bin\cogxstd.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("c6c44aa8-7e4d-4df9-8974-c259e343e8e3"))
+/* dual interface */ ICogResultsAnalysisStatus;
+struct /* coclass */ CogResultsAnalysisStatus;
+struct __declspec(uuid("58d4151f-1cf9-4886-a675-9eeceeffa5fc"))
+/* dual interface */ ICogResultsAnalysisDatum;
+struct /* coclass */ CogResultsAnalysisDatum;
+struct __declspec(uuid("d0277b35-ea02-4329-9889-47ae37df25f7"))
+/* dual interface */ ICogResultsAnalysisCell;
+struct /* coclass */ CogResultsAnalysisCell;
+struct __declspec(uuid("3762fd07-ae72-4498-b62d-7b4e81d58922"))
+/* dual interface */ ICogResultsAnalysis;
+struct /* coclass */ CogResultsAnalysis;
+struct __declspec(uuid("4dac668e-edb0-11d5-bfbd-006008be1019"))
+/* dual interface */ ICogToolGroupLink;
+struct __declspec(uuid("ae0e7b7e-f336-4930-9b4a-ade4cf570179"))
+/* dual interface */ ICogToolGroupLinks;
+struct __declspec(uuid("7b7159f6-11a3-4c07-ac1c-d61cde683749"))
+/* dispinterface */ ICogToolGroupEvents;
+struct __declspec(uuid("bb3ac99e-b23f-4cb8-8e26-ef0cacc961bd"))
+/* dual interface */ ICogToolGroup;
+struct /* coclass */ CogToolGroup;
+struct /* coclass */ CogToolGroupLink;
+struct /* coclass */ CogToolGroupLinks;
+struct __declspec(uuid("98d99d27-74db-4164-81dd-bf8e6054b1f6"))
+/* interface */ ICogResultsAnalysisStatus_Disp;
+struct __declspec(uuid("cfc4574c-b9f9-47c3-98ab-15919b8adc3e"))
+/* interface */ ICogResultsAnalysisDatum_Disp;
+struct __declspec(uuid("891ee367-e846-455a-9aaa-301c7beb3261"))
+/* interface */ ICogResultsAnalysisCell_Disp;
+struct __declspec(uuid("3bb3b704-c78a-409d-bb7b-0bf6edff3d1a"))
+/* interface */ ICogResultsAnalysis_Disp;
+struct __declspec(uuid("269478f6-3dd8-11d3-ad53-006097fe57f1"))
+/* interface */ ICogToolGroup_Disp;
+struct __declspec(uuid("6147b395-7ae1-11d5-bf9d-006008be1019"))
+/* interface */ ICogToolGroupLink_Disp;
+struct __declspec(uuid("6147b394-7ae1-11d5-bf9d-006008be1019"))
+/* interface */ ICogToolGroupLinks_Disp;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysisStatus, __uuidof(ICogResultsAnalysisStatus));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysisDatum, __uuidof(ICogResultsAnalysisDatum));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysisCell, __uuidof(ICogResultsAnalysisCell));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysis, __uuidof(ICogResultsAnalysis));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroupLink, __uuidof(ICogToolGroupLink));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroupLinks, __uuidof(ICogToolGroupLinks));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroupEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroup, __uuidof(ICogToolGroup));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysisStatus_Disp, __uuidof(ICogResultsAnalysisStatus_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysisDatum_Disp, __uuidof(ICogResultsAnalysisDatum_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysisCell_Disp, __uuidof(ICogResultsAnalysisCell_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogResultsAnalysis_Disp, __uuidof(ICogResultsAnalysis_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroup_Disp, __uuidof(ICogToolGroup_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroupLink_Disp, __uuidof(ICogToolGroupLink_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogToolGroupLinks_Disp, __uuidof(ICogToolGroupLinks_Disp));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("c6c44aa8-7e4d-4df9-8974-c259e343e8e3"))
+ICogResultsAnalysisStatus : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_StatusCode (
+        enum CogAnalysisConstants * pVal ) = 0;
+    virtual HRESULT __stdcall get_StatusString (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Init (
+        enum CogAnalysisConstants Code,
+        BSTR String ) = 0;
+};
+
+struct __declspec(uuid("672662d8-74db-4164-81dd-bf8e6054b1f6"))
+CogResultsAnalysisStatus;
+    // [ default ] interface ICogResultsAnalysisStatus
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+
+enum CogResultsAnalysisDatumModeConstants
+{
+    cogResultsAnalysisDatumModeConstant = 0,
+    cogResultsAnalysisDatumModeCell = 1,
+    cogResultsAnalysisDatumModeTerminalAsScalar = 2,
+    cogResultsAnalysisDatumModeTerminalAsVector = 3
+};
+
+enum CogResultsAnalysisDatumStateIDs
+{
+    cogResultsAnalysisDatum_Mode = 17100802,
+    cogResultsAnalysisDatum_ConstantValue = 17100803,
+    cogResultsAnalysisDatum_CellIndex = 17100804,
+    cogResultsAnalysisDatum_TerminalToolName = 17100805,
+    cogResultsAnalysisDatum_TerminalScalarPath = 17100806,
+    cogResultsAnalysisDatum_TerminalVectorCollectionPath = 17100807,
+    cogResultsAnalysisDatum_TerminalVectorFeaturePath = 17100808
+};
+
+struct __declspec(uuid("58d4151f-1cf9-4886-a675-9eeceeffa5fc"))
+ICogResultsAnalysisDatum : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Mode (
+        enum CogResultsAnalysisDatumModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_Mode (
+        enum CogResultsAnalysisDatumModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ConstantValue (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ConstantValue (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_CellIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_CellIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TerminalToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_TerminalToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_TerminalScalarPath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_TerminalScalarPath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_TerminalVectorCollectionPath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_TerminalVectorCollectionPath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_TerminalVectorFeaturePath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_TerminalVectorFeaturePath (
+        BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("303ba8b3-b9f9-47c3-98ab-15919b8adc3e"))
+CogResultsAnalysisDatum;
+    // [ default ] interface ICogResultsAnalysisDatum
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogResultsAnalysisOperationConstants
+{
+    cogResultsAnalysisOperationNoop = 0,
+    cogResultsAnalysisOperationArithmeticAdd = 1,
+    cogResultsAnalysisOperationArithmeticSubtract = 2,
+    cogResultsAnalysisOperationArithmeticMultiply = 3,
+    cogResultsAnalysisOperationArithmeticDivide = 4,
+    cogResultsAnalysisOperationNumericLessThan = 5,
+    cogResultsAnalysisOperationNumericLessThanOrEqual = 6,
+    cogResultsAnalysisOperationNumericEqual = 7,
+    cogResultsAnalysisOperationNumericGreaterThanOrEqual = 8,
+    cogResultsAnalysisOperationNumericGreaterThan = 9,
+    cogResultsAnalysisOperationStringEqualExactly = 10,
+    cogResultsAnalysisOperationStringEqualCaseInsensitive = 11,
+    cogResultsAnalysisOperationLogicAnd = 12,
+    cogResultsAnalysisOperationLogicOr = 13,
+    cogResultsAnalysisOperationLogicXor = 14,
+    cogResultsAnalysisOperationLogicNot = 15,
+    cogResultsAnalysisOperationLogicAndAll = 16,
+    cogResultsAnalysisOperationLogicOrAll = 17,
+    cogResultsAnalysisOperationMathAbs = 18,
+    cogResultsAnalysisOperationMathSqrt = 19
+};
+
+enum CogResultsAnalysisCellStateIDs
+{
+    cogResultsAnalysisCell_Operation = 17100820,
+    cogResultsAnalysisCell_Arg0 = 17100823,
+    cogResultsAnalysisCell_Arg1 = 17100835,
+    cogResultsAnalysisCell_Value = 17100821
+};
+
+struct __declspec(uuid("d0277b35-ea02-4329-9889-47ae37df25f7"))
+ICogResultsAnalysisCell : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Operation (
+        enum CogResultsAnalysisOperationConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_Operation (
+        enum CogResultsAnalysisOperationConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_Arg0 (
+        struct ICogResultsAnalysisDatum * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Arg1 (
+        struct ICogResultsAnalysisDatum * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall OperationRequiredArgumentCount (
+        enum CogResultsAnalysisOperationConstants OpCode,
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("76e11c98-e846-455a-9aaa-301c7beb3261"))
+CogResultsAnalysisCell;
+    // [ default ] interface ICogResultsAnalysisCell
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogResultsAnalysisStateIDs
+{
+    cogResultsAnalysis_DecisionSourceIndex = 17100829
+};
+
+struct __declspec(uuid("3762fd07-ae72-4498-b62d-7b4e81d58922"))
+ICogResultsAnalysis : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct ICogResultsAnalysisCell * * pvarRet ) = 0;
+    virtual HRESULT __stdcall FindItem (
+        struct ICogResultsAnalysisCell * Item,
+        long * Index ) = 0;
+    virtual HRESULT __stdcall Remove (
+        long Index ) = 0;
+    virtual HRESULT __stdcall Move (
+        long FromIndex,
+        long ToIndex ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall putref_Item (
+        long Index,
+        struct ICogResultsAnalysisCell * pvarRet ) = 0;
+    virtual HRESULT __stdcall Add (
+        struct ICogResultsAnalysisCell * Item,
+        long Index ) = 0;
+    virtual HRESULT __stdcall get_DecisionSourceIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DecisionSourceIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_DecisionValue (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Update (
+        IDispatch * TerminalCollection ) = 0;
+};
+
+struct __declspec(uuid("c44c48fb-c78a-409d-bb7b-0bf6edff3d1a"))
+CogResultsAnalysis;
+    // [ default ] interface ICogResultsAnalysis
+    // [ default, source ] dispinterface ICogCollectionEvents
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+
+enum CogToolGroupLinkStateIDs
+{
+    cogToolGroupLink_SourceToolName = 16900209,
+    cogToolGroupLink_SourcePath = 16900210,
+    cogToolGroupLink_DestinationToolName = 16900211,
+    cogToolGroupLink_DestinationPath = 16900212,
+    cogToolGroupLink_ErrorCode = 16900225
+};
+
+enum CogFAs_ToolGroupLink
+{
+    cogFA_ToolGroupLink_Source = 268435456,
+    cogFA_ToolGroupLink_Destination = 134217728,
+    cogFA_ToolGroupLink_ErrorCode = 67108864
+};
+
+struct __declspec(uuid("4dac668e-edb0-11d5-bfbd-006008be1019"))
+ICogToolGroupLink : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_SourceToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourceToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SourcePath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourcePath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_DestinationToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_DestinationToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_DestinationPath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_DestinationPath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_ErrorCode (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_ErrorString (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Updated (
+        long ErrorCode,
+        BSTR ErrorString ) = 0;
+};
+
+struct __declspec(uuid("ae0e7b7e-f336-4930-9b4a-ade4cf570179"))
+ICogToolGroupLinks : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct ICogToolGroupLink * * pvarRet ) = 0;
+    virtual HRESULT __stdcall FindItem (
+        struct ICogToolGroupLink * Item,
+        long * Index ) = 0;
+    virtual HRESULT __stdcall Remove (
+        long Index ) = 0;
+    virtual HRESULT __stdcall Clear (
+        BSTR ToolName ) = 0;
+    virtual HRESULT __stdcall AddNew (
+        BSTR SourceToolName,
+        BSTR SourcePath,
+        BSTR DestinationToolName,
+        BSTR DestinationPath ) = 0;
+};
+
+enum CogToolGroupStateIDs
+{
+    cogToolGroup_RunStatus = 16896000,
+    cogToolGroup_ToolName = 16896002,
+    cogToolGroup_LastRunRecordEnable = 16896004,
+    cogToolGroup_LastRunRecordDiagEnable = 16896005,
+    cogToolGroup_CurrentRecordEnable = 16896006,
+    cogToolGroup_Script = 16900099,
+    cogToolGroup_Enabled = 16900219,
+    cogToolGroup_AbortRunOnToolFailure = 16900098,
+    cogToolGroup_ResultsRejectAnalysisEnabled = 16900100,
+    cogToolGroup_ResultsWarnAnalysisEnabled = 16900102,
+    cogToolGroup_ResultsRejectAnalysis = 16900105,
+    cogToolGroup_ResultsWarnAnalysis = 16900106,
+    cogToolGroup_ResultsStatus = 16900113
+};
+
+enum CogToolGroupEventIDs
+{
+    cogToolGroupEvents_Debugging = 7738,
+    cogToolGroupEvents_CurrentRecordCreated = 7739,
+    cogToolGroupEvents_LastRunRecordCreated = 7740,
+    cogToolGroupEvents_ToolPostRun = 7742
+};
+
+enum CogFAs_ToolGroup
+{
+    cogFA_ToolGroup_Script = 268435456,
+    cogFA_ToolGroup_Enabled = 134217728,
+    cogFA_ToolGroup_AbortRunOnToolFailure = 67108864,
+    cogFA_ToolGroup_ResultsRejectAnalysisEnabled = 33554432,
+    cogFA_ToolGroup_ResultsWarnAnalysisEnabled = 16777216,
+    cogFA_ToolGroup_ResultsRejectAnalysis = 8388608,
+    cogFA_ToolGroup_ResultsWarnAnalysis = 4194304,
+    cogFA_ToolGroup_ResultsStatus = 2097152
+};
+
+struct __declspec(uuid("7b7159f6-11a3-4c07-ac1c-d61cde683749"))
+ICogToolGroupEvents : IDispatch
+{};
+
+enum CogToolGroupLastRunRecordConstants
+{
+    cogToolGroupLastRunRecordNone = 0,
+    cogToolGroupLastRunRecordOutputImages = 1,
+    cogToolGroupLastRunRecordSubToolGraphics = 2,
+    cogToolGroupLastRunRecordCustom = 65536,
+    cogToolGroupLastRunRecordAll = -1
+};
+
+enum CogToolGroupLastRunRecordDiagConstants
+{
+    cogToolGroupLastRunRecordDiagNone = 0,
+    cogToolGroupLastRunRecordDiagInputImagesByReference = 1,
+    cogToolGroupLastRunRecordDiagInputImagesDeepCopy = 4,
+    cogToolGroupLastRunRecordDiagAll = -1
+};
+
+enum CogToolGroupCurrentRecordConstants
+{
+    cogToolGroupCurrentRecordNone = 0,
+    cogToolGroupCurrentRecordInputImages = 1,
+    cogToolGroupCurrentRecordSubToolGraphics = 2,
+    cogToolGroupCurrentRecordCustom = 65536,
+    cogToolGroupCurrentRecordAll = -1
+};
+
+struct __declspec(uuid("bb3ac99e-b23f-4cb8-8e26-ef0cacc961bd"))
+ICogToolGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogToolGroupLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogToolGroupLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogToolGroupLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogToolGroupLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogToolGroupCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogToolGroupCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT KeyOrIndex,
+        struct ICogTool * * pvarRet ) = 0;
+    virtual HRESULT __stdcall FindItem (
+        struct ICogTool * Item,
+        long * Index ) = 0;
+    virtual HRESULT __stdcall get_Key (
+        long Index,
+        BSTR * pvarRet ) = 0;
+    virtual HRESULT __stdcall FindKey (
+        BSTR Key,
+        long * pvarRet ) = 0;
+    virtual HRESULT __stdcall Remove (
+        VARIANT KeyOrIndex ) = 0;
+    virtual HRESULT __stdcall Move (
+        long FromIndex,
+        long ToIndex ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall put_Key (
+        long Index,
+        BSTR pvarRet ) = 0;
+    virtual HRESULT __stdcall putref_Item (
+        VARIANT KeyOrIndex,
+        struct ICogTool * pvarRet ) = 0;
+    virtual HRESULT __stdcall Add (
+        struct ICogTool * Item,
+        long Index ) = 0;
+    virtual HRESULT __stdcall AddNew (
+        BSTR ProgIDOrClassID,
+        BSTR ToolName,
+        long Index,
+        struct ICogTool * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Links (
+        struct ICogToolGroupLinks * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Inputs (
+        struct ICogCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Outputs (
+        struct ICogCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        long Index,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        long Index,
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall GetValidToolName (
+        BSTR ProposedName,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_AbortRunOnToolFailure (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_AbortRunOnToolFailure (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_ResultsRejectAnalysisEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_ResultsRejectAnalysisEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_ResultsWarnAnalysisEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_ResultsWarnAnalysisEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_ResultsRejectAnalysis (
+        struct ICogResultsAnalysis * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ResultsWarnAnalysis (
+        struct ICogResultsAnalysis * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ResultsStatus (
+        struct ICogResultsAnalysisStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall ResultsRejectAnalysisUpdate ( ) = 0;
+    virtual HRESULT __stdcall ResultsWarnAnalysisUpdate ( ) = 0;
+    virtual HRESULT __stdcall ResultsStatusUpdate ( ) = 0;
+    virtual HRESULT __stdcall get_Script (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Script (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Debug (
+        VARIANT Message ) = 0;
+    virtual HRESULT __stdcall get_ScriptObject (
+        IDispatch * * pVal ) = 0;
+};
+
+struct __declspec(uuid("d96b8709-3dd8-11d3-ad53-006097fe57f1"))
+CogToolGroup;
+    // [ default ] interface ICogToolGroup
+    // [ default, source ] dispinterface ICogToolGroupEvents
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ source ] dispinterface ICogToolEvents
+
+struct __declspec(uuid("9eb84c6a-7ae1-11d5-bf9d-006008be1019"))
+CogToolGroupLink;
+    // [ default ] interface ICogToolGroupLink
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+
+struct __declspec(uuid("9eb84c6b-7ae1-11d5-bf9d-006008be1019"))
+CogToolGroupLinks;
+    // [ default ] interface ICogToolGroupLinks
+    // [ default, source ] dispinterface ICogCollectionEvents
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+
+struct __declspec(uuid("98d99d27-74db-4164-81dd-bf8e6054b1f6"))
+ICogResultsAnalysisStatus_Disp : ICogResultsAnalysisStatus
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("cfc4574c-b9f9-47c3-98ab-15919b8adc3e"))
+ICogResultsAnalysisDatum_Disp : ICogResultsAnalysisDatum
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("891ee367-e846-455a-9aaa-301c7beb3261"))
+ICogResultsAnalysisCell_Disp : ICogResultsAnalysisCell
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("3bb3b704-c78a-409d-bb7b-0bf6edff3d1a"))
+ICogResultsAnalysis_Disp : ICogResultsAnalysis
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("269478f6-3dd8-11d3-ad53-006097fe57f1"))
+ICogToolGroup_Disp : ICogToolGroup
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("6147b395-7ae1-11d5-bf9d-006008be1019"))
+ICogToolGroupLink_Disp : ICogToolGroupLink
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("6147b394-7ae1-11d5-bf9d-006008be1019"))
+ICogToolGroupLinks_Disp : ICogToolGroupLinks
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CognexToolGroup =
+    {0x170e0c76,0xf949,0x11d4,{0xbf,0x93,0x00,0x60,0x08,0xbe,0x10,0x19}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysisStatus =
+    {0xc6c44aa8,0x7e4d,0x4df9,{0x89,0x74,0xc2,0x59,0xe3,0x43,0xe8,0xe3}};
+extern "C" const GUID __declspec(selectany) CLSID_CogResultsAnalysisStatus =
+    {0x672662d8,0x74db,0x4164,{0x81,0xdd,0xbf,0x8e,0x60,0x54,0xb1,0xf6}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysisDatum =
+    {0x58d4151f,0x1cf9,0x4886,{0xa6,0x75,0x9e,0xec,0xee,0xff,0xa5,0xfc}};
+extern "C" const GUID __declspec(selectany) CLSID_CogResultsAnalysisDatum =
+    {0x303ba8b3,0xb9f9,0x47c3,{0x98,0xab,0x15,0x91,0x9b,0x8a,0xdc,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysisCell =
+    {0xd0277b35,0xea02,0x4329,{0x98,0x89,0x47,0xae,0x37,0xdf,0x25,0xf7}};
+extern "C" const GUID __declspec(selectany) CLSID_CogResultsAnalysisCell =
+    {0x76e11c98,0xe846,0x455a,{0x9a,0xaa,0x30,0x1c,0x7b,0xeb,0x32,0x61}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysis =
+    {0x3762fd07,0xae72,0x4498,{0xb6,0x2d,0x7b,0x4e,0x81,0xd5,0x89,0x22}};
+extern "C" const GUID __declspec(selectany) CLSID_CogResultsAnalysis =
+    {0xc44c48fb,0xc78a,0x409d,{0xbb,0x7b,0x0b,0xf6,0xed,0xff,0x3d,0x1a}};
+extern "C" const GUID __declspec(selectany) IID_ICogToolGroupLink =
+    {0x4dac668e,0xedb0,0x11d5,{0xbf,0xbd,0x00,0x60,0x08,0xbe,0x10,0x19}};
+extern "C" const GUID __declspec(selectany) IID_ICogToolGroupLinks =
+    {0xae0e7b7e,0xf336,0x4930,{0x9b,0x4a,0xad,0xe4,0xcf,0x57,0x01,0x79}};
+extern "C" const GUID __declspec(selectany) DIID_ICogToolGroupEvents =
+    {0x7b7159f6,0x11a3,0x4c07,{0xac,0x1c,0xd6,0x1c,0xde,0x68,0x37,0x49}};
+extern "C" const GUID __declspec(selectany) IID_ICogToolGroup =
+    {0xbb3ac99e,0xb23f,0x4cb8,{0x8e,0x26,0xef,0x0c,0xac,0xc9,0x61,0xbd}};
+extern "C" const GUID __declspec(selectany) CLSID_CogToolGroup =
+    {0xd96b8709,0x3dd8,0x11d3,{0xad,0x53,0x00,0x60,0x97,0xfe,0x57,0xf1}};
+extern "C" const GUID __declspec(selectany) CLSID_CogToolGroupLink =
+    {0x9eb84c6a,0x7ae1,0x11d5,{0xbf,0x9d,0x00,0x60,0x08,0xbe,0x10,0x19}};
+extern "C" const GUID __declspec(selectany) CLSID_CogToolGroupLinks =
+    {0x9eb84c6b,0x7ae1,0x11d5,{0xbf,0x9d,0x00,0x60,0x08,0xbe,0x10,0x19}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysisStatus_Disp =
+    {0x98d99d27,0x74db,0x4164,{0x81,0xdd,0xbf,0x8e,0x60,0x54,0xb1,0xf6}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysisDatum_Disp =
+    {0xcfc4574c,0xb9f9,0x47c3,{0x98,0xab,0x15,0x91,0x9b,0x8a,0xdc,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysisCell_Disp =
+    {0x891ee367,0xe846,0x455a,{0x9a,0xaa,0x30,0x1c,0x7b,0xeb,0x32,0x61}};
+extern "C" const GUID __declspec(selectany) IID_ICogResultsAnalysis_Disp =
+    {0x3bb3b704,0xc78a,0x409d,{0xbb,0x7b,0x0b,0xf6,0xed,0xff,0x3d,0x1a}};
+extern "C" const GUID __declspec(selectany) IID_ICogToolGroup_Disp =
+    {0x269478f6,0x3dd8,0x11d3,{0xad,0x53,0x00,0x60,0x97,0xfe,0x57,0xf1}};
+extern "C" const GUID __declspec(selectany) IID_ICogToolGroupLink_Disp =
+    {0x6147b395,0x7ae1,0x11d5,{0xbf,0x9d,0x00,0x60,0x08,0xbe,0x10,0x19}};
+extern "C" const GUID __declspec(selectany) IID_ICogToolGroupLinks_Disp =
+    {0x6147b394,0x7ae1,0x11d5,{0xbf,0x9d,0x00,0x60,0x08,0xbe,0x10,0x19}};
+
+#pragma pack(pop)

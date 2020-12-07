@@ -1,0 +1,3 @@
+{"requestHead":{"eqp_id":"HZKJ107","time_stamp":"2020-12-02 20:00:00","trx_id":"27D74059-F415-4C06-A2EE-E11A58261920"}
+,"requestBody":{"keep_reason":"1","report_dt":"2020-12-02 20:00:00","shift_id":"1","utl_infos":{"utl":[{"item_id":"report_date","item_value":"2020-12-02"},{"item_id":"U001","item_value":"0.0000%"},{"item_id":"U002","item_value":"0"},{"item_id":"U003","item_value":"0"},{"item_id":"U004","item_value":"0"},{"item_id":"U005","item_value":"0"}]}}
+};

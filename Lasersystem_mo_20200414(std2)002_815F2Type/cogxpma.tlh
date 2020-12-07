@@ -1,0 +1,1396 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (3c897340).
+//
+// cogxpma.tlh
+//
+// C++ source equivalent of Win32 type library Cognex_6_2_32-bit\cogxpma.dll
+// compiler-generated file created 02/26/18 at 16:40:48 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Program Files\Cognex\VisionPro\bin\cogxstd.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("a4a0f786-46cc-11d3-abff-00a0247aa525"))
+/* dual interface */ ICogPMAlignZoneAngle;
+struct __declspec(uuid("5181f85c-6ffc-4aca-a2f3-417771578ce1"))
+/* dual interface */ ICogPMAlignZoneScale;
+struct __declspec(uuid("56413d72-4dde-420f-ad7f-e20e4341c437"))
+/* dual interface */ ICogPMAlignRunParams;
+struct __declspec(uuid("8abcef78-9951-4ae3-b418-1ac6750e8df5"))
+/* dual interface */ ICogPMAlignFlexRunParams;
+struct __declspec(uuid("05b6fd67-b60b-45a9-a0e1-e8303727d9a5"))
+/* dual interface */ ICogPMAlignResult;
+struct __declspec(uuid("32de08b1-359c-4bd7-8dda-23b4c227dc31"))
+/* dual interface */ ICogPMAlignResults;
+struct __declspec(uuid("450be8c1-fa61-459b-9338-e21281f76e27"))
+/* dual interface */ ICogPMAlignPattern;
+struct __declspec(uuid("02c9902b-4de0-4b96-9c45-645b18d036b4"))
+/* dual interface */ ICogPMAlignTool;
+struct /* coclass */ CogPMAlignZoneAngle;
+struct /* coclass */ CogPMAlignZoneScale;
+struct /* coclass */ CogPMAlignPattern;
+struct /* coclass */ CogPMAlignRunParams;
+struct /* coclass */ CogPMAlignFlexRunParams;
+struct /* coclass */ CogPMAlignResult;
+struct /* coclass */ CogPMAlignResults;
+struct /* coclass */ CogPMAlignTool;
+struct __declspec(uuid("5b5f0878-46cc-11d3-abff-00a0247aa525"))
+/* interface */ ICogPMAlignZoneAngle_Disp;
+struct __declspec(uuid("cdc93601-8595-48d0-8b79-b7988f890642"))
+/* interface */ ICogPMAlignZoneScale_Disp;
+struct __declspec(uuid("8030cf42-3940-11d3-abfd-00a0247aa525"))
+/* interface */ ICogPMAlignPattern_Disp;
+struct __declspec(uuid("4302594b-969d-11d2-8a1e-006097f7cfe2"))
+/* interface */ ICogPMAlignRunParams_Disp;
+struct __declspec(uuid("c0112ea3-1836-4420-9490-f0cdcc0b1bf3"))
+/* interface */ ICogPMAlignFlexRunParams_Disp;
+struct __declspec(uuid("43025949-969d-11d2-8a1e-006097f7cfe2"))
+/* interface */ ICogPMAlignResult_Disp;
+struct __declspec(uuid("43025947-969d-11d2-8a1e-006097f7cfe2"))
+/* interface */ ICogPMAlignResults_Disp;
+struct __declspec(uuid("b54247a9-396d-11d3-ad50-006097fe57f1"))
+/* interface */ ICogPMAlignTool_Disp;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignZoneAngle, __uuidof(ICogPMAlignZoneAngle));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignZoneScale, __uuidof(ICogPMAlignZoneScale));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignRunParams, __uuidof(ICogPMAlignRunParams));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignFlexRunParams, __uuidof(ICogPMAlignFlexRunParams));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignResult, __uuidof(ICogPMAlignResult));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignResults, __uuidof(ICogPMAlignResults));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignPattern, __uuidof(ICogPMAlignPattern));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignTool, __uuidof(ICogPMAlignTool));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignZoneAngle_Disp, __uuidof(ICogPMAlignZoneAngle_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignZoneScale_Disp, __uuidof(ICogPMAlignZoneScale_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignPattern_Disp, __uuidof(ICogPMAlignPattern_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignRunParams_Disp, __uuidof(ICogPMAlignRunParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignFlexRunParams_Disp, __uuidof(ICogPMAlignFlexRunParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignResult_Disp, __uuidof(ICogPMAlignResult_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignResults_Disp, __uuidof(ICogPMAlignResults_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogPMAlignTool_Disp, __uuidof(ICogPMAlignTool_Disp));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("a4a0f786-46cc-11d3-abff-00a0247aa525"))
+ICogPMAlignZoneAngle : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Configuration (
+        enum CogPMAlignZoneConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_Configuration (
+        enum CogPMAlignZoneConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_Nominal (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Nominal (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Low (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Low (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_High (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_High (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Overlap (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Overlap (
+        double pVal ) = 0;
+};
+
+enum CogPMAlignZoneConstants
+{
+    cogPMAlignZoneNominal = 0,
+    cogPMAlignZoneLowHigh = 1
+};
+
+struct __declspec(uuid("5181f85c-6ffc-4aca-a2f3-417771578ce1"))
+ICogPMAlignZoneScale : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Configuration (
+        enum CogPMAlignZoneConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_Configuration (
+        enum CogPMAlignZoneConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_Nominal (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Nominal (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Low (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Low (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_High (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_High (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Overlap (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Overlap (
+        double pVal ) = 0;
+};
+
+struct __declspec(uuid("56413d72-4dde-420f-ad7f-e20e4341c437"))
+ICogPMAlignRunParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ApproximateNumberToFind (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ApproximateNumberToFind (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_AcceptThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_AcceptThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_ContrastThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_ContrastThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_ScoreUsingClutter (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_ScoreUsingClutter (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_TimeoutEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_TimeoutEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Timeout (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Timeout (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RunAlgorithm (
+        enum CogPMAlignRunAlgorithmConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_RunAlgorithm (
+        enum CogPMAlignRunAlgorithmConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneAngle (
+        struct ICogPMAlignZoneAngle * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneAngle (
+        struct ICogPMAlignZoneAngle * pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneScale (
+        struct ICogPMAlignZoneScale * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneScale (
+        struct ICogPMAlignZoneScale * pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneScaleX (
+        struct ICogPMAlignZoneScale * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneScaleX (
+        struct ICogPMAlignZoneScale * pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneScaleY (
+        struct ICogPMAlignZoneScale * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneScaleY (
+        struct ICogPMAlignZoneScale * pVal ) = 0;
+    virtual HRESULT __stdcall get_XYOverlap (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_XYOverlap (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitsUsePattern (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitsUsePattern (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitCoarse (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitCoarse (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitFine (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitFine (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_SaveMatchInfo (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_SaveMatchInfo (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchRegionMode (
+        enum CogRegionModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SearchRegionMode (
+        enum CogRegionModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_SearchImageMask (
+        struct ICogImage8Grey * pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchImageMaskOffsetX (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_SearchImageMaskOffsetX (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchImageMaskOffsetY (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_SearchImageMaskOffsetY (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_FlexParams (
+        struct ICogPMAlignFlexRunParams * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutsideRegionThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_OutsideRegionThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RunMode (
+        enum CogPMAlignRunModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_RunMode (
+        enum CogPMAlignRunModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_StartPose (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_StartPose (
+        struct ICogTransform2DLinear * pVal ) = 0;
+    virtual HRESULT __stdcall get_EdgeThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_EdgeThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_AutoEdgeThresholdEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_AutoEdgeThresholdEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_CoarseAcceptThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CoarseAcceptThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CoarseAcceptThresholdEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_CoarseAcceptThresholdEnabled (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+enum CogPMAlignRunAlgorithmConstants
+{
+    cogPMAlignRunAlgorithmPatMax = 0,
+    cogPMAlignRunAlgorithmPatQuick = 1,
+    cogPMAlignRunAlgorithmBestTrained = 2,
+    cogPMAlignRunAlgorithmPatFlex = 3
+};
+
+struct __declspec(uuid("8abcef78-9951-4ae3-b418-1ac6750e8df5"))
+ICogPMAlignFlexRunParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_MaxDeformationRate (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_MaxDeformationRate (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Smoothness (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Smoothness (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Refinement (
+        enum CogPMAlignFlexRefinementConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_Refinement (
+        enum CogPMAlignFlexRefinementConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlPointsX (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlPointsX (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlPointsY (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlPointsY (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_SaveDeformationInfo (
+        enum CogPMAlignFlexDeformationInfoConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SaveDeformationInfo (
+        enum CogPMAlignFlexDeformationInfoConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_DeformationFit (
+        enum CogPMAlignFlexDeformationFitConstants * NewVal ) = 0;
+    virtual HRESULT __stdcall put_DeformationFit (
+        enum CogPMAlignFlexDeformationFitConstants NewVal ) = 0;
+};
+
+enum CogPMAlignFlexRefinementConstants
+{
+    cogPMAlignFlexRefinementNone = 0,
+    cogPMAlignFlexRefinementCoarse = 1,
+    cogPMAlignFlexRefinementMedium = 2,
+    cogPMAlignFlexRefinementFine = 3
+};
+
+enum CogPMAlignFlexDeformationInfoConstants
+{
+    cogPMAlignFlexDeformationInfoNone = 0,
+    cogPMAlignFlexDeformationInfoTransform = 1,
+    cogPMAlignFlexDeformationInfoTransformAndUnwarpData = 2
+};
+
+enum CogPMAlignFlexDeformationFitConstants
+{
+    cogPMAlignFlexDeformationFitPerspective = 0,
+    cogPMAlignFlexDeformationFitSurfaceFlex = 1
+};
+
+enum CogPMAlignRunModeConstants
+{
+    cogPMAlignRunModeSearchImage = 0,
+    cogPMAlignRunModeRefineStartPose = 1
+};
+
+struct __declspec(uuid("05b6fd67-b60b-45a9-a0e1-e8303727d9a5"))
+ICogPMAlignResult : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ID (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall GetPose (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Score (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_FitError (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_Coverage (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_Clutter (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_Accepted (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall get_Contrast (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoIDs (
+        struct ICogCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateResultGraphics (
+        enum CogPMAlignResultGraphicConstants GraphicOptions,
+        struct ICogCompositeShape * * pVal ) = 0;
+    virtual HRESULT __stdcall get_UnwarpedInputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutsideRegionFeatureProportion (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutsideRegionAreaProportion (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_MaxCoarseAcceptThreshold (
+        double * pVal ) = 0;
+};
+
+enum CogPMAlignResultGraphicConstants
+{
+    cogPMAlignResultGraphicNone = 0,
+    cogPMAlignResultGraphicTipText = 1,
+    cogPMAlignResultGraphicOrigin = 2,
+    cogPMAlignResultGraphicBoundingBox = 4,
+    cogPMAlignResultGraphicMatchFeatures = 16,
+    cogPMAlignResultGraphicMatchRegion = 32,
+    cogPMAlignResultGraphicCoordinateAxes = 64,
+    cogPMAlignResultGraphicMatchShapeModels = 128,
+    cogPMAlignResultGraphicFlexDeformationGrid = 256,
+    cogPMAlignResultGraphicAll = -1
+};
+
+struct __declspec(uuid("32de08b1-359c-4bd7-8dda-23b4c227dc31"))
+ICogPMAlignResults : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct ICogPMAlignResult * * pvarRet ) = 0;
+    virtual HRESULT __stdcall FindItem (
+        struct ICogPMAlignResult * Item,
+        long * Index ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoIDs (
+        struct ICogCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall GetTrainArea (
+        struct ICogRectangle * * pVal ) = 0;
+};
+
+struct __declspec(uuid("450be8c1-fa61-459b-9338-e21281f76e27"))
+ICogPMAlignPattern : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_IgnorePolarity (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_IgnorePolarity (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Elasticity (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Elasticity (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_ExpectedDeformationRate (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_ExpectedDeformationRate (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_HighSensitivityParameter (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_HighSensitivityParameter (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitAutoSelect (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitAutoSelect (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitCoarse (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitCoarse (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitFine (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitFine (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall PCPLoadFromFile (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall get_PCPString (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_PCPString (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_PCPDiagMessage (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainAlgorithm (
+        enum CogPMAlignTrainAlgorithmConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_TrainAlgorithm (
+        enum CogPMAlignTrainAlgorithmConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainMode (
+        enum CogPMAlignTrainModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_TrainMode (
+        enum CogPMAlignTrainModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainImage (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_TrainImage (
+        struct ICogImage8Grey * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainShapeModels (
+        struct ICogShapeModelCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_TrainShapeModels (
+        struct ICogShapeModelCollection * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainShapeModelsTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_TrainShapeModelsTransform (
+        struct ICogTransform2D * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainRegion (
+        struct ICogRegion * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_TrainRegion (
+        struct ICogRegion * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainRegionMode (
+        enum CogRegionModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_TrainRegionMode (
+        enum CogRegionModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_Origin (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Origin (
+        struct ICogTransform2DLinear * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_TrainImageMask (
+        struct ICogImage8Grey * pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainImageMaskOffsetX (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_TrainImageMaskOffsetX (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TrainImageMaskOffsetY (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_TrainImageMaskOffsetY (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall ImportFromCvlArchive (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall get_Trained (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall CreateGraphicsCoarse (
+        enum CogColorConstants Color,
+        struct ICogGraphicCollection * * Graphics ) = 0;
+    virtual HRESULT __stdcall CreateGraphicsFine (
+        enum CogColorConstants Color,
+        struct ICogGraphicCollection * * Graphics ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoIDs (
+        struct ICogCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall GetTrainedPatternImage (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall GetTrainedPatternImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall GetTrainedPatternShapeModels (
+        struct ICogShapeModelCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall Train ( ) = 0;
+    virtual HRESULT __stdcall Untrain ( ) = 0;
+    virtual HRESULT __stdcall Execute (
+        struct ICogImage8Grey * Image,
+        struct ICogRegion * SearchRegion,
+        struct ICogPMAlignRunParams * RunParams,
+        struct ICogPMAlignResults * * Results ) = 0;
+    virtual HRESULT __stdcall get_RepeatingPatterns (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_RepeatingPatterns (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_EdgeThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_EdgeThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_AutoEdgeThresholdEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_AutoEdgeThresholdEnabled (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+enum CogPMAlignTrainAlgorithmConstants
+{
+    cogPMAlignTrainAlgorithmPatMax = 0,
+    cogPMAlignTrainAlgorithmPatQuick = 1,
+    cogPMAlignTrainAlgorithmPatMaxAndPatQuick = 2,
+    cogPMAlignTrainAlgorithmPatFlex = 3,
+    cogPMAlignTrainAlgorithmPatMaxHighSensitivity = 4
+};
+
+enum CogPMAlignTrainModeConstants
+{
+    cogPMAlignTrainModeImage = 0,
+    cogPMAlignTrainModeShapeModelsWithImage = 1,
+    cogPMAlignTrainModeShapeModelsWithTransform = 2
+};
+
+struct __declspec(uuid("02c9902b-4de0-4b96-9c45-645b18d036b4"))
+ICogPMAlignTool : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogPMAlignLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogPMAlignLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogPMAlignLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogPMAlignLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogPMAlignCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogPMAlignCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_InputImage (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_InputImage (
+        struct ICogImage8Grey * pVal ) = 0;
+    virtual HRESULT __stdcall get_Pattern (
+        struct ICogPMAlignPattern * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Pattern (
+        struct ICogPMAlignPattern * pVal ) = 0;
+    virtual HRESULT __stdcall get_RunParams (
+        struct ICogPMAlignRunParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_RunParams (
+        struct ICogPMAlignRunParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_Results (
+        struct ICogPMAlignResults * * pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchRegion (
+        struct ICogRegion * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_SearchRegion (
+        struct ICogRegion * pVal ) = 0;
+};
+
+enum CogPMAlignLastRunRecordConstants
+{
+    cogPMAlignLastRunRecordNone = 0,
+    cogPMAlignLastRunRecordResultsOrigin = 2,
+    cogPMAlignLastRunRecordResultsBoundingBox = 8,
+    cogPMAlignLastRunRecordResultsMatchRegion = 64,
+    cogPMAlignLastRunRecordResultsCoordinateAxes = 128,
+    cogPMAlignLastRunRecordResultsMatchShapeModels = 256,
+    cogPMAlignLastRunRecordAll = -1
+};
+
+enum CogPMAlignLastRunRecordDiagConstants
+{
+    cogPMAlignLastRunRecordDiagNone = 0,
+    cogPMAlignLastRunRecordDiagInputImageByReference = 1,
+    cogPMAlignLastRunRecordDiagInputImageDeepCopy = 4,
+    cogPMAlignLastRunRecordDiagTrainImageDeepCopy = 16,
+    cogPMAlignLastRunRecordDiagTrainRegion = 32,
+    cogPMAlignLastRunRecordDiagPatternOrigin = 64,
+    cogPMAlignLastRunRecordDiagPatternFeaturesCoarse = 128,
+    cogPMAlignLastRunRecordDiagPatternFeaturesFine = 256,
+    cogPMAlignLastRunRecordDiagTrainImageMask = 512,
+    cogPMAlignLastRunRecordDiagTrainShapeModels = 1024,
+    cogPMAlignLastRunRecordDiagTrainedPatternImage = 4096,
+    cogPMAlignLastRunRecordDiagTrainedPatternRegion = 8192,
+    cogPMAlignLastRunRecordDiagTrainedPatternOrigin = 16384,
+    cogPMAlignLastRunRecordDiagTrainedPatternFeaturesCoarse = 32768,
+    cogPMAlignLastRunRecordDiagTrainedPatternFeaturesFine = 65536,
+    cogPMAlignLastRunRecordDiagTrainedPatternImageMask = 131072,
+    cogPMAlignLastRunRecordDiagTrainedPatternShapeModels = 262144,
+    cogPMAlignLastRunRecordDiagResultsMatchFeatures = 1048576,
+    cogPMAlignLastRunRecordDiagSearchRegion = 2097152,
+    cogPMAlignLastRunRecordDiagSearchImageMask = 4194304,
+    cogPMAlignLastRunRecordDiagFlexDeformationGrid = 8388608,
+    cogPMAlignLastRunRecordDiagFlexUnwarpedImages = 16777216,
+    cogPMAlignLastRunRecordDiagAll = -1
+};
+
+enum CogPMAlignCurrentRecordConstants
+{
+    cogPMAlignCurrentRecordNone = 0,
+    cogPMAlignCurrentRecordTrainImage = 1,
+    cogPMAlignCurrentRecordTrainRegion = 2,
+    cogPMAlignCurrentRecordTrainImageMask = 4,
+    cogPMAlignCurrentRecordPatternOrigin = 8,
+    cogPMAlignCurrentRecordPatternFeaturesCoarse = 16,
+    cogPMAlignCurrentRecordPatternFeaturesFine = 32,
+    cogPMAlignCurrentRecordTrainShapeModels = 64,
+    cogPMAlignCurrentRecordTrainedPatternImage = 256,
+    cogPMAlignCurrentRecordTrainedPatternRegion = 512,
+    cogPMAlignCurrentRecordTrainedPatternImageMask = 1024,
+    cogPMAlignCurrentRecordTrainedPatternOrigin = 2048,
+    cogPMAlignCurrentRecordTrainedPatternFeaturesCoarse = 4096,
+    cogPMAlignCurrentRecordTrainedPatternFeaturesFine = 8192,
+    cogPMAlignCurrentRecordTrainedPatternShapeModels = 16384,
+    cogPMAlignCurrentRecordInputImage = 65536,
+    cogPMAlignCurrentRecordSearchRegion = 131072,
+    cogPMAlignCurrentRecordSearchImageMask = 262144,
+    cogPMAlignCurrentRecordAll = -1
+};
+
+enum CogPMAlignErrConstants
+{
+    e_CogPMAlign_CanNotTrain = -2147205120,
+    e_CogPMAlign_PatMaxNotTrained = -2147205119,
+    e_CogPMAlign_PatQuickNotTrained = -2147205118,
+    e_CogPMAlign_InvalidPCP = -2147205117,
+    e_CogPMAlign_ImportFromCVLError = -2147205116,
+    e_CogPMAlign_SaveMatchInfoError = -2147205115,
+    e_CogPMAlign_NoShapeModels = -2147205114,
+    e_CogPMAlign_BadWeights = -2147205113,
+    e_CogPMAlign_ModelTooLarge = -2147205112,
+    e_CogPMAlign_UndefinedPolarity = -2147205111,
+    e_CogPMAlign_WrongTrainMode = -2147205110,
+    e_CogPMAlign_PatFlexNotTrained = -2147205109,
+    e_CogPMAlign_SaveDeformationInfoError = -2147205108
+};
+
+enum CogPMAlignMsgConstants
+{
+    ids_CogPMAlign_InvalidTrainAlgorithm = -2147220992,
+    ids_CogPMAlign_InvalidRunAlgorithm = -2147220991,
+    ids_CogPMAlign_BoundingBoxTipText = -2147220990,
+    ids_CogPMAlign_MatchRegionTipText = -2147220989,
+    ids_CogPMAlign_OriginScaleTipText = -2147220988,
+    ids_CogPMAlign_OriginScaleXYTipText = -2147220987,
+    ids_CogPMAlign_AdjustMaskNotSupported = -2147220986,
+    ids_CogPMAlign_ChangeToDotSpace = -2147220985,
+    ids_CogPMAlign_InvalidRunMode = -2147220983
+};
+
+enum CogPMAlignRunDiagnosticConstants
+{
+    cogPMAlignRunDiagnosticContrastThreshold = 20300,
+    cogPMAlignRunDiagnosticProximity = 20301,
+    cogPMAlignRunDiagnosticExcessClutter = 20302,
+    cogPMAlignRunDiagnosticDegenerate = 20303
+};
+
+enum CogPMAlignTrainDiagnosticConstants
+{
+    cogPMAlignTrainDiagnosticTooFewFeatures = 10000,
+    cogPMAlignTrainDiagnosticGranularity = 10001,
+    cogPMAlignTrainDiagnosticBlurry = 10100,
+    cogPMAlignTrainDiagnosticConfusingDOF = 10101,
+    cogPMAlignTrainDiagnosticDegenerate = 10102,
+    cogPMAlignTrainDiagnosticFineFeatures = 10200
+};
+
+enum CogPMAlignZoneAngleStateIDs
+{
+    cogPMAlignZoneAngle_Configuration = 16867329,
+    cogPMAlignZoneAngle_Nominal = 16867330,
+    cogPMAlignZoneAngle_Low = 16867331,
+    cogPMAlignZoneAngle_High = 16867332,
+    cogPMAlignZoneAngle_Overlap = 16867333
+};
+
+enum CogFAs_PMAlignZoneAngle
+{
+    cogFA_PMAlignZoneAngle_LowHighZone = 2
+};
+
+enum CogPMAlignZoneScaleStateIDs
+{
+    cogPMAlignZoneScale_Configuration = 16867398,
+    cogPMAlignZoneScale_Nominal = 16867399,
+    cogPMAlignZoneScale_Low = 16867400,
+    cogPMAlignZoneScale_High = 16867401,
+    cogPMAlignZoneScale_Overlap = 16867402
+};
+
+enum CogFAs_PMAlignZoneScale
+{
+    cogFA_PMAlignZoneScale_LowHighZone = 2
+};
+
+enum CogPMAlignFlexRunParamsStateIDs
+{
+    cogPMAlignFlexRunParams_MaxDeformationRate = 16867444,
+    cogPMAlignFlexRunParams_Smoothness = 16867445,
+    cogPMAlignFlexRunParams_Refinement = 16867446,
+    cogPMAlignFlexRunParams_ControlPointsX = 16867447,
+    cogPMAlignFlexRunParams_ControlPointsY = 16867474,
+    cogPMAlignFlexRunParams_SaveDeformationInfo = 16867478,
+    cogPMAlignFlexRunParams_DeformationFit = 16867482
+};
+
+enum CogPMAlignRunParamsStateIDs
+{
+    cogPMAlignRunParams_ApproximateNumberToFind = 16867335,
+    cogPMAlignRunParams_AcceptThreshold = 16867336,
+    cogPMAlignRunParams_ContrastThreshold = 16867337,
+    cogPMAlignRunParams_ScoreUsingClutter = 16867338,
+    cogPMAlignRunParams_Timeout = 16867339,
+    cogPMAlignRunParams_TimeoutEnabled = 16867404,
+    cogPMAlignRunParams_RunAlgorithm = 16867340,
+    cogPMAlignRunParams_ZoneAngle = 16867341,
+    cogPMAlignRunParams_ZoneScale = 16867342,
+    cogPMAlignRunParams_ZoneScaleX = 16867343,
+    cogPMAlignRunParams_ZoneScaleY = 16867344,
+    cogPMAlignRunParams_XYOverlap = 16867345,
+    cogPMAlignRunParams_GrainLimitCoarse = 16867406,
+    cogPMAlignRunParams_GrainLimitFine = 16867407,
+    cogPMAlignRunParams_GrainLimitsUsePattern = 16867405,
+    cogPMAlignRunParams_SaveMatchInfo = 16867408,
+    cogPMAlignRunParams_SearchRegionMode = 16867409,
+    cogPMAlignRunParams_SearchImageMask = 16867410,
+    cogPMAlignRunParams_SearchImageMaskOffsetX = 16867411,
+    cogPMAlignRunParams_SearchImageMaskOffsetY = 16867412,
+    cogPMAlignRunParams_OutsideRegionThreshold = 16867488,
+    cogPMAlignRunParams_RunMode = 16867486,
+    cogPMAlignRunParams_StartPose = 16867487,
+    cogPMAlignRunParams_EdgeThreshold = 16867489,
+    cogPMAlignRunParams_AutoEdgeThresholdEnabled = 16867495,
+    cogPMAlignRunParams_CoarseAcceptThreshold = 16867492,
+    cogPMAlignRunParams_CoarseAcceptThresholdEnabled = 16867496
+};
+
+enum CogFAs_PMAlignRunParams
+{
+    cogFA_PMAlignRunParams_GrainLimits = 2,
+    cogFA_PMAlignRunParams_CoarseAccept = 4
+};
+
+enum CogPMAlignPatternStateIDs
+{
+    cogPMAlignPattern_IgnorePolarity = 16867358,
+    cogPMAlignPattern_Elasticity = 16867359,
+    cogPMAlignPattern_GrainLimitAutoSelect = 16867360,
+    cogPMAlignPattern_GrainLimitCoarse = 16867361,
+    cogPMAlignPattern_GrainLimitFine = 16867362,
+    cogPMAlignPattern_PCPString = 16867363,
+    cogPMAlignPattern_TrainAlgorithm = 16867365,
+    cogPMAlignPattern_TrainMode = 16867417,
+    cogPMAlignPattern_TrainImage = 16867367,
+    cogPMAlignPattern_TrainShapeModels = 16867439,
+    cogPMAlignPattern_TrainShapeModelsTransform = 16867440,
+    cogPMAlignPattern_TrainRegion = 16867368,
+    cogPMAlignPattern_TrainRegionMode = 16867419,
+    cogPMAlignPattern_Origin = 16867369,
+    cogPMAlignPattern_TrainImageMask = 16867420,
+    cogPMAlignPattern_TrainImageMaskOffsetX = 16867421,
+    cogPMAlignPattern_TrainImageMaskOffsetY = 16867422,
+    cogPMAlignPattern_Trained = 16867370,
+    cogPMAlignPattern_InfoStrings = 16867373,
+    cogPMAlignPattern_InfoIDs = 16867424,
+    cogPMAlignPattern_GraphicsFine = 16867372,
+    cogPMAlignPattern_GraphicsCoarse = 16867371,
+    cogPMAlignPattern_TrainedPatternImage = 16867425,
+    cogPMAlignPattern_TrainedPatternImageMask = 16867426,
+    cogPMAlignPattern_TrainedPatternShapeModels = 16867441,
+    cogPMAlignPattern_ExpectedDeformationRate = 16867477,
+    cogPMAlignPattern_HighSensitivityParameter = 16867484,
+    cogPMAlignPattern_RepeatingPatterns = 16867493,
+    cogPMAlignPattern_EdgeThreshold = 16867494,
+    cogPMAlignPattern_AutoEdgeThresholdEnabled = 16867497
+};
+
+enum CogFAs_PMAlignPattern
+{
+    cogFA_PMAlignPattern_GrainLimits = 2,
+    cogFA_PMAlignPattern_TrainResults = 4,
+    cogFA_PMAlignPattern_TrainAlgorithm = 8,
+    cogFA_PMAlignPattern_TrainImage = 16,
+    cogFA_PMAlignPattern_TrainImageMask = 32,
+    cogFA_PMAlignPattern_TrainRegion = 64,
+    cogFA_PMAlignPattern_PCPString = 128,
+    cogFA_PMAlignPattern_Origin = 256,
+    cogFA_PMAlignPattern_TrainMode = 512,
+    cogFA_PMAlignPattern_TrainShapeModels = 1024,
+    cogFA_PMAlignPattern_TrainShapeModelsTransform = 2048,
+    cogFA_PMAlignPattern_HighSensitivityParameter = 4096,
+    cogFA_PMAlignPattern_RepeatingPatterns = 8192,
+    cogFA_PMAlignPattern_EdgeThreshold = 16384,
+    cogFA_PMAlignPattern_AutoEdgeThresholdEnabled = 32768
+};
+
+enum CogPMAlignToolStateIDs
+{
+    cogPMAlignTool_RunStatus = 16896000,
+    cogPMAlignTool_ToolName = 16896002,
+    cogPMAlignTool_LastRunRecordEnable = 16896004,
+    cogPMAlignTool_LastRunRecordDiagEnable = 16896005,
+    cogPMAlignTool_CurrentRecordEnable = 16896006,
+    cogPMAlignTool_InputImage = 16867378,
+    cogPMAlignTool_Pattern = 16867380,
+    cogPMAlignTool_RunParams = 16867382,
+    cogPMAlignTool_Results = 16867384,
+    cogPMAlignTool_SearchRegion = 16867437
+};
+
+struct __declspec(uuid("a4a0f787-46cc-11d3-abff-00a0247aa525"))
+CogPMAlignZoneAngle;
+    // [ default ] interface ICogPMAlignZoneAngle
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("3236c9fe-8595-48d0-8b79-b7988f890642"))
+CogPMAlignZoneScale;
+    // [ default ] interface ICogPMAlignZoneScale
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("7fcf30bd-3940-11d3-abfd-00a0247aa525"))
+CogPMAlignPattern;
+    // [ default ] interface ICogPMAlignPattern
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("bcfda6b4-969d-11d2-8a1e-006097f7cfe2"))
+CogPMAlignRunParams;
+    // [ default ] interface ICogPMAlignRunParams
+    // interface ICogPMAlignFlexRunParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("3feed15c-1836-4420-9490-f0cdcc0b1bf3"))
+CogPMAlignFlexRunParams;
+    // [ default ] interface ICogPMAlignFlexRunParams
+    // interface ICogPMAlignRunParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("bcfda6b6-969d-11d2-8a1e-006097f7cfe2"))
+CogPMAlignResult;
+    // [ default ] interface ICogPMAlignResult
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+
+struct __declspec(uuid("bcfda6b8-969d-11d2-8a1e-006097f7cfe2"))
+CogPMAlignResults;
+    // [ default ] interface ICogPMAlignResults
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogRecordConstructor
+
+struct __declspec(uuid("4abdb856-396d-11d3-ad50-006097fe57f1"))
+CogPMAlignTool;
+    // [ default ] interface ICogPMAlignTool
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] dispinterface ICogToolEvents
+    // interface ICogRecordConstructor
+
+struct __declspec(uuid("5b5f0878-46cc-11d3-abff-00a0247aa525"))
+ICogPMAlignZoneAngle_Disp : ICogPMAlignZoneAngle
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("cdc93601-8595-48d0-8b79-b7988f890642"))
+ICogPMAlignZoneScale_Disp : ICogPMAlignZoneScale
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("8030cf42-3940-11d3-abfd-00a0247aa525"))
+ICogPMAlignPattern_Disp : ICogPMAlignPattern
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("4302594b-969d-11d2-8a1e-006097f7cfe2"))
+ICogPMAlignRunParams_Disp : ICogPMAlignRunParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_MaxDeformationRate (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_MaxDeformationRate (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Smoothness (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Smoothness (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_Refinement (
+        enum CogPMAlignFlexRefinementConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_Refinement (
+        enum CogPMAlignFlexRefinementConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlPointsX (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlPointsX (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlPointsY (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlPointsY (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_SaveDeformationInfo (
+        enum CogPMAlignFlexDeformationInfoConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SaveDeformationInfo (
+        enum CogPMAlignFlexDeformationInfoConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_DeformationFit (
+        enum CogPMAlignFlexDeformationFitConstants * NewVal ) = 0;
+    virtual HRESULT __stdcall put_DeformationFit (
+        enum CogPMAlignFlexDeformationFitConstants NewVal ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("c0112ea3-1836-4420-9490-f0cdcc0b1bf3"))
+ICogPMAlignFlexRunParams_Disp : ICogPMAlignFlexRunParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ApproximateNumberToFind (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ApproximateNumberToFind (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_AcceptThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_AcceptThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_ContrastThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_ContrastThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_ScoreUsingClutter (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_ScoreUsingClutter (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_TimeoutEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_TimeoutEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Timeout (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Timeout (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RunAlgorithm (
+        enum CogPMAlignRunAlgorithmConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_RunAlgorithm (
+        enum CogPMAlignRunAlgorithmConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneAngle (
+        struct ICogPMAlignZoneAngle * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneAngle (
+        struct ICogPMAlignZoneAngle * pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneScale (
+        struct ICogPMAlignZoneScale * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneScale (
+        struct ICogPMAlignZoneScale * pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneScaleX (
+        struct ICogPMAlignZoneScale * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneScaleX (
+        struct ICogPMAlignZoneScale * pVal ) = 0;
+    virtual HRESULT __stdcall get_ZoneScaleY (
+        struct ICogPMAlignZoneScale * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ZoneScaleY (
+        struct ICogPMAlignZoneScale * pVal ) = 0;
+    virtual HRESULT __stdcall get_XYOverlap (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_XYOverlap (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitsUsePattern (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitsUsePattern (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitCoarse (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitCoarse (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GrainLimitFine (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GrainLimitFine (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_SaveMatchInfo (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_SaveMatchInfo (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchRegionMode (
+        enum CogRegionModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SearchRegionMode (
+        enum CogRegionModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_SearchImageMask (
+        struct ICogImage8Grey * pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchImageMaskOffsetX (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_SearchImageMaskOffsetX (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_SearchImageMaskOffsetY (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_SearchImageMaskOffsetY (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_FlexParams (
+        struct ICogPMAlignFlexRunParams * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutsideRegionThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_OutsideRegionThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RunMode (
+        enum CogPMAlignRunModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_RunMode (
+        enum CogPMAlignRunModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_StartPose (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_StartPose (
+        struct ICogTransform2DLinear * pVal ) = 0;
+    virtual HRESULT __stdcall get_EdgeThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_EdgeThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_AutoEdgeThresholdEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_AutoEdgeThresholdEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_CoarseAcceptThreshold (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CoarseAcceptThreshold (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CoarseAcceptThresholdEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_CoarseAcceptThresholdEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("43025949-969d-11d2-8a1e-006097f7cfe2"))
+ICogPMAlignResult_Disp : ICogPMAlignResult
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("43025947-969d-11d2-8a1e-006097f7cfe2"))
+ICogPMAlignResults_Disp : ICogPMAlignResults
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("b54247a9-396d-11d3-ad50-006097fe57f1"))
+ICogPMAlignTool_Disp : ICogPMAlignTool
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CognexPatmaxAlign =
+    {0xbcfda6a3,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignZoneAngle =
+    {0xa4a0f786,0x46cc,0x11d3,{0xab,0xff,0x00,0xa0,0x24,0x7a,0xa5,0x25}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignZoneScale =
+    {0x5181f85c,0x6ffc,0x4aca,{0xa2,0xf3,0x41,0x77,0x71,0x57,0x8c,0xe1}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignRunParams =
+    {0x56413d72,0x4dde,0x420f,{0xad,0x7f,0xe2,0x0e,0x43,0x41,0xc4,0x37}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignFlexRunParams =
+    {0x8abcef78,0x9951,0x4ae3,{0xb4,0x18,0x1a,0xc6,0x75,0x0e,0x8d,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignResult =
+    {0x05b6fd67,0xb60b,0x45a9,{0xa0,0xe1,0xe8,0x30,0x37,0x27,0xd9,0xa5}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignResults =
+    {0x32de08b1,0x359c,0x4bd7,{0x8d,0xda,0x23,0xb4,0xc2,0x27,0xdc,0x31}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignPattern =
+    {0x450be8c1,0xfa61,0x459b,{0x93,0x38,0xe2,0x12,0x81,0xf7,0x6e,0x27}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignTool =
+    {0x02c9902b,0x4de0,0x4b96,{0x9c,0x45,0x64,0x5b,0x18,0xd0,0x36,0xb4}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignZoneAngle =
+    {0xa4a0f787,0x46cc,0x11d3,{0xab,0xff,0x00,0xa0,0x24,0x7a,0xa5,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignZoneScale =
+    {0x3236c9fe,0x8595,0x48d0,{0x8b,0x79,0xb7,0x98,0x8f,0x89,0x06,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignPattern =
+    {0x7fcf30bd,0x3940,0x11d3,{0xab,0xfd,0x00,0xa0,0x24,0x7a,0xa5,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignRunParams =
+    {0xbcfda6b4,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignFlexRunParams =
+    {0x3feed15c,0x1836,0x4420,{0x94,0x90,0xf0,0xcd,0xcc,0x0b,0x1b,0xf3}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignResult =
+    {0xbcfda6b6,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignResults =
+    {0xbcfda6b8,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) CLSID_CogPMAlignTool =
+    {0x4abdb856,0x396d,0x11d3,{0xad,0x50,0x00,0x60,0x97,0xfe,0x57,0xf1}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignZoneAngle_Disp =
+    {0x5b5f0878,0x46cc,0x11d3,{0xab,0xff,0x00,0xa0,0x24,0x7a,0xa5,0x25}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignZoneScale_Disp =
+    {0xcdc93601,0x8595,0x48d0,{0x8b,0x79,0xb7,0x98,0x8f,0x89,0x06,0x42}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignPattern_Disp =
+    {0x8030cf42,0x3940,0x11d3,{0xab,0xfd,0x00,0xa0,0x24,0x7a,0xa5,0x25}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignRunParams_Disp =
+    {0x4302594b,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignFlexRunParams_Disp =
+    {0xc0112ea3,0x1836,0x4420,{0x94,0x90,0xf0,0xcd,0xcc,0x0b,0x1b,0xf3}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignResult_Disp =
+    {0x43025949,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignResults_Disp =
+    {0x43025947,0x969d,0x11d2,{0x8a,0x1e,0x00,0x60,0x97,0xf7,0xcf,0xe2}};
+extern "C" const GUID __declspec(selectany) IID_ICogPMAlignTool_Disp =
+    {0xb54247a9,0x396d,0x11d3,{0xad,0x50,0x00,0x60,0x97,0xfe,0x57,0xf1}};
+
+#pragma pack(pop)

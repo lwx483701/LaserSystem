@@ -1,0 +1,1224 @@
+
+Tue Nov 24 09:54:21 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -41 [Bits]
+[OffsetY] = 6 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0514458
+correXion5.exe terminated
+
+Tue Nov 24 09:55:30 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -37 [Bits]
+[OffsetY] = 11 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0421822
+correXion5.exe terminated
+
+Tue Nov 24 13:36:13 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -96 [Bits]
+[OffsetY] = 50 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.142303
+correXion5.exe terminated
+
+Tue Nov 24 14:35:29 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -33 [Bits]
+[OffsetY] = 2 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0460019
+correXion5.exe terminated
+
+Wed Nov 25 09:39:18 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -42 [Bits]
+[OffsetY] = 0 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0387983
+correXion5.exe terminated
+
+Wed Nov 25 14:45:48 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -53 [Bits]
+[OffsetY] = -17 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0403587
+correXion5.exe terminated
+
+Wed Nov 25 14:46:58 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -49 [Bits]
+[OffsetY] = -7 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0528409
+correXion5.exe terminated
+
+Wed Nov 25 15:27:05 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -52 [Bits]
+[OffsetY] = 14 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0427024
+correXion5.exe terminated
+
+Wed Nov 25 15:28:12 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -58 [Bits]
+[OffsetY] = 10 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0498291
+correXion5.exe terminated
+
+Wed Nov 25 15:29:21 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -56 [Bits]
+[OffsetY] = -1 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0516014
+correXion5.exe terminated
+
+Wed Nov 25 15:30:29 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -55 [Bits]
+[OffsetY] = 14 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0473798
+correXion5.exe terminated
+
+Thu Nov 26 17:05:25 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -5 [Bits]
+[OffsetY] = 12 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0438697
+correXion5.exe terminated
+
+Tue Dec 08 10:50:09 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -24 [Bits]
+[OffsetY] = -20 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0513099
+correXion5.exe terminated
+
+Tue Dec 08 11:13:17 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -35 [Bits]
+[OffsetY] = -4 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0434053
+correXion5.exe terminated
+
+Tue Dec 08 13:20:33 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -66 [Bits]
+[OffsetY] = 21 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0402723
+correXion5.exe terminated
+
+Tue Dec 08 17:08:21 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -42 [Bits]
+[OffsetY] = 5 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0543146
+correXion5.exe terminated
+
+Wed Dec 09 10:30:05 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -17 [Bits]
+[OffsetY] = 3 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0476122
+correXion5.exe terminated
+
+Wed Dec 09 11:01:53 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -10 [Bits]
+[OffsetY] = 0 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0408121
+correXion5.exe terminated
+
+Wed Dec 09 11:47:55 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -22 [Bits]
+[OffsetY] = -6 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0554943
+correXion5.exe terminated
+
+Wed Dec 09 13:36:07 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -31 [Bits]
+[OffsetY] = -12 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0545623
+correXion5.exe terminated
+
+Tue Dec 22 15:17:32 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -24 [Bits]
+[OffsetY] = -21 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.049302
+correXion5.exe terminated
+
+Tue Dec 22 16:28:00 2015
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -32 [Bits]
+[OffsetY] = -6 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0415651
+correXion5.exe terminated
+
+Wed Jan 20 10:12:13 2016
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -75 [Bits]
+[OffsetY] = 18 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0491257
+correXion5.exe terminated
+
+Wed Jan 20 10:13:21 2016
+
+Current working path: D:\Lasersystem_E2\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -77 [Bits]
+[OffsetY] = 4 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0348092
+correXion5.exe terminated
+
+Thu Aug 31 17:21:19 2017
+
+Current working path: E:\Lasersystem_mo_20170830\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -92 [Bits]
+[OffsetY] = -105 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.258045
+correXion5.exe terminated
+
+Thu Aug 31 17:42:31 2017
+
+Current working path: E:\Lasersystem_mo_20170830\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -62 [Bits]
+[OffsetY] = -104 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0582787
+correXion5.exe terminated
+
+Thu Aug 31 17:43:31 2017
+
+Current working path: E:\Lasersystem_mo_20170830\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -50 [Bits]
+[OffsetY] = -96 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0869782
+correXion5.exe terminated
+
+Thu Aug 31 17:44:31 2017
+
+Current working path: E:\Lasersystem_mo_20170830\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -54 [Bits]
+[OffsetY] = -108 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.362515
+correXion5.exe terminated
+
+Thu Aug 31 17:45:31 2017
+
+Current working path: E:\Lasersystem_mo_20170830\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -51 [Bits]
+[OffsetY] = -75 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.109577
+correXion5.exe terminated
+
+Fri Sep 01 09:22:50 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -36 [Bits]
+[OffsetY] = -110 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.519916
+correXion5.exe terminated
+
+Fri Sep 01 09:23:50 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -53 [Bits]
+[OffsetY] = -113 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.199423
+correXion5.exe terminated
+
+Fri Sep 01 09:25:12 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -50 [Bits]
+[OffsetY] = -94 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.571798
+correXion5.exe terminated
+
+Fri Sep 01 09:26:12 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -52 [Bits]
+[OffsetY] = -110 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0736084
+correXion5.exe terminated
+
+Fri Sep 01 10:53:15 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -43 [Bits]
+[OffsetY] = -115 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0566721
+correXion5.exe terminated
+
+Fri Sep 01 10:54:16 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -41 [Bits]
+[OffsetY] = -136 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0782944
+correXion5.exe terminated
+
+Fri Sep 01 10:55:19 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -21 [Bits]
+[OffsetY] = -114 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.212245
+correXion5.exe terminated
+
+Fri Sep 01 10:56:23 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -42 [Bits]
+[OffsetY] = -113 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0617891
+correXion5.exe terminated
+
+Fri Sep 01 11:38:53 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -19 [Bits]
+[OffsetY] = -124 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0826432
+correXion5.exe terminated
+
+Fri Sep 01 11:39:56 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -24 [Bits]
+[OffsetY] = -114 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0488514
+correXion5.exe terminated
+
+Fri Sep 01 11:41:01 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -20 [Bits]
+[OffsetY] = -115 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0499435
+correXion5.exe terminated
+
+Fri Sep 01 11:42:04 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -19 [Bits]
+[OffsetY] = -127 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0894414
+correXion5.exe terminated
+
+Fri Sep 01 16:16:01 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -22 [Bits]
+[OffsetY] = -102 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0563301
+correXion5.exe terminated
+
+Fri Sep 01 16:17:29 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -22 [Bits]
+[OffsetY] = -105 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.047345
+correXion5.exe terminated
+
+Fri Sep 01 16:18:55 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -16 [Bits]
+[OffsetY] = -115 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0533381
+correXion5.exe terminated
+
+Fri Sep 01 16:20:23 2017
+
+Current working path: E:\Lasersystem_mo_20170831\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -31 [Bits]
+[OffsetY] = -114 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0439164
+correXion5.exe terminated
+
+Fri Nov 03 17:26:27 2017
+
+Current working path: E:\Lasersystem_mo_20171103_RTC5_newDriver\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -31 [Bits]
+[OffsetY] = 0 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0592972
+correXion5.exe terminated
+
+Tue Nov 07 09:12:14 2017
+
+Current working path: E:\Lasersystem_mo_20171103_RTC5_newDriver_t\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -5 [Bits]
+[OffsetY] = 12 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0492507
+correXion5.exe terminated
+
+Tue Nov 07 14:58:22 2017
+
+Current working path: E:\Lasersystem_mo_20171103_RTC5_newDriver_t\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 800 ignored
+[RTC4] = 0
+[CALIBRATION] = 800
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 800 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 655.36 +/- [mm]
+
+[OffsetX] = -9 [Bits]
+[OffsetY] = -9 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.049993
+correXion5.exe terminated
+
+Wed Nov 08 16:20:17 2017
+
+Current working path: E:\Lasersystem_mo_20171107_RTC5_newDriver\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 0 ignored
+[RTC4] = 0
+[CALIBRATION] = 695
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 695 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 754.371 +/- [mm]
+
+[OffsetX] = 491 [Bits]
+[OffsetY] = -118 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 9.53841
+correXion5.exe terminated
+
+Wed Nov 08 16:49:51 2017
+
+Current working path: E:\Lasersystem_mo_20171107_RTC5_newDriver\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 695 ignored
+[RTC4] = 0
+[CALIBRATION] = 695
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 695 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 754.371 +/- [mm]
+
+[OffsetX] = -35 [Bits]
+[OffsetY] = 30 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.042186
+correXion5.exe terminated
+
+Wed Nov 08 16:53:33 2017
+
+Current working path: E:\Lasersystem_mo_20171107_RTC5_newDriver\LPathC
+Current data file: Cor_auto5L.dat
+[INPUT] = CorL
+[OUTPUT] = CorL
+InFile Calibration: 695 ignored
+[RTC4] = 0
+[CALIBRATION] = 695
+[GRIDNUMBERS]  = 5  5; grid X, grid Y; points: 11 per line, 11 per column, total 121
+Polynomial fitting used for calculation
+[OUTPUT]: CorL written successfully
+[CALIBRATION] = 695 ;final
+[Limit(Bits)] = 524288 +/- [Bits]
+[Limit(mm)]   = 754.371 +/- [mm]
+
+[OffsetX] = -15 [Bits]
+[OffsetY] = 24 [Bits]
+[AUTO_FIT] = 1
+[FITORDER] = 10 ;adjusted automatically
+[TOLERANCE] = 0.01
+[Deviation] = 0.0410889
+correXion5.exe terminated

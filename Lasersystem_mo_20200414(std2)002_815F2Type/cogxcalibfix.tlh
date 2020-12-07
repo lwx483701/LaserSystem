@@ -1,0 +1,2343 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (b9c76fa5).
+//
+// cogxcalibfix.tlh
+//
+// C++ source equivalent of Win32 type library Cognex_6_2_32-bit\cogxcalibfix.dll
+// compiler-generated file created 02/26/18 at 16:40:48 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Program Files\Cognex\VisionPro\bin\cogxstd.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("5bfd16b3-c432-4210-beae-ee721e094fbc"))
+/* dual interface */ ICogFixtureParams;
+struct __declspec(uuid("b230a183-d217-11d5-bd43-00104b1caa62"))
+/* dual interface */ ICogFixture;
+struct /* coclass */ CogFixture;
+struct /* coclass */ CogFixtureParams;
+struct __declspec(uuid("93c44d11-b9c7-11d5-bd3d-00104b1caa62"))
+/* dual interface */ ICogFixtureTool;
+struct /* coclass */ CogFixtureTool;
+struct __declspec(uuid("770734a3-bd16-11d5-bd3d-00104b1caa62"))
+/* dual interface */ ICogNPointToNPoint;
+struct /* coclass */ CogNPointToNPoint;
+struct __declspec(uuid("c5b48694-cef6-11d5-bd43-00104b1caa62"))
+/* dual interface */ ICogFixtureNPointToNPointResult;
+struct __declspec(uuid("498ad78e-1c6e-48ea-94d3-4cf41ad92ac4"))
+/* dual interface */ ICogFixtureNPointToNPointParams;
+struct __declspec(uuid("444cacd3-cf00-11d5-bd43-00104b1caa62"))
+/* dual interface */ ICogFixtureNPointToNPoint;
+struct /* coclass */ CogFixtureNPointToNPoint;
+struct /* coclass */ CogFixtureNPointToNPointParams;
+struct /* coclass */ CogFixtureNPointToNPointResult;
+struct __declspec(uuid("ad66f993-bd1a-11d5-bd3d-00104b1caa62"))
+/* dual interface */ ICogFixtureNPointToNPointTool;
+struct /* coclass */ CogFixtureNPointToNPointTool;
+struct __declspec(uuid("5b922ac3-d219-11d5-bd43-00104b1caa62"))
+/* dual interface */ ICogCalibNPointToNPointRunParams;
+struct /* coclass */ CogCalibNPointToNPointRunParams;
+struct __declspec(uuid("c1b70e11-bdd1-11d5-bd3d-00104b1caa62"))
+/* dual interface */ ICogCalibNPointToNPointParams;
+struct __declspec(uuid("95e5df14-ca6a-11d5-bd41-00104b1caa62"))
+/* dual interface */ ICogCalibNPointToNPoint;
+struct /* coclass */ CogCalibNPointToNPoint;
+struct /* coclass */ CogCalibNPointToNPointParams;
+struct __declspec(uuid("770734a6-bd16-11d5-bd3d-00104b1caa62"))
+/* dual interface */ ICogCalibNPointToNPointTool;
+struct /* coclass */ CogCalibNPointToNPointTool;
+struct __declspec(uuid("ee4aad2c-ac2c-4a73-b806-6d8faf9372f4"))
+/* dual interface */ ICogCalibCheckerboardRunParams;
+struct /* coclass */ CogCalibCheckerboardRunParams;
+struct __declspec(uuid("efcce36c-119d-4268-b4e3-35b7c0bac83e"))
+/* dual interface */ ICogCalibCheckerboardWarpParams;
+struct __declspec(uuid("d38b9ed0-2dc8-4397-8140-40546cd59534"))
+/* dual interface */ ICogCalibCheckerboardParams;
+struct __declspec(uuid("dcbfa9af-4b3e-42cb-a582-ff0769017ab6"))
+/* dual interface */ ICogCalibCheckerboard;
+struct /* coclass */ CogCalibCheckerboard;
+struct /* coclass */ CogCalibCheckerboardParams;
+struct /* coclass */ CogCalibCheckerboardWarpParams;
+struct __declspec(uuid("3740a525-0650-4e05-9906-fa4825c8b9ad"))
+/* dual interface */ ICogCalibCheckerboardTool;
+struct /* coclass */ CogCalibCheckerboardTool;
+struct __declspec(uuid("4dcf5e7b-d217-11d5-bd43-00104b1caa62"))
+/* interface */ ICogFixture_Disp;
+struct __declspec(uuid("2a864c3f-d232-11d5-bd43-00104b1caa62"))
+/* interface */ ICogFixtureParams_Disp;
+struct __declspec(uuid("6c3bb2ed-b9c7-11d5-bd3d-00104b1caa62"))
+/* interface */ ICogFixtureTool_Disp;
+struct __declspec(uuid("88f8cb5b-bd16-11d5-bd3d-00104b1caa62"))
+/* interface */ ICogNPointToNPoint_Disp;
+struct __declspec(uuid("bbb3532b-cf00-11d5-bd43-00104b1caa62"))
+/* interface */ ICogFixtureNPointToNPoint_Disp;
+struct __declspec(uuid("fc90dd6e-c34b-11d5-bd3e-00104b1caa62"))
+/* interface */ ICogFixtureNPointToNPointParams_Disp;
+struct __declspec(uuid("3a4b796a-cef6-11d5-bd43-00104b1caa62"))
+/* interface */ ICogFixtureNPointToNPointResult_Disp;
+struct __declspec(uuid("5299066b-bd1a-11d5-bd3d-00104b1caa62"))
+/* interface */ ICogFixtureNPointToNPointTool_Disp;
+struct __declspec(uuid("a46dd53b-d219-11d5-bd43-00104b1caa62"))
+/* interface */ ICogCalibNPointToNPointRunParams_Disp;
+struct __declspec(uuid("6a1a20ea-ca6a-11d5-bd41-00104b1caa62"))
+/* interface */ ICogCalibNPointToNPoint_Disp;
+struct __declspec(uuid("fc90dd6f-c34b-11d5-bd3e-00104b1caa62"))
+/* interface */ ICogCalibNPointToNPointParams_Disp;
+struct __declspec(uuid("88f8cb58-bd16-11d5-bd3d-00104b1caa62"))
+/* interface */ ICogCalibNPointToNPointTool_Disp;
+struct __declspec(uuid("bf0f63ec-26ee-4212-bff0-9f2bde5b670f"))
+/* interface */ ICogCalibCheckerboardRunParams_Disp;
+struct __declspec(uuid("83a98218-8e8c-4fff-961f-b513ca940238"))
+/* interface */ ICogCalibCheckerboard_Disp;
+struct __declspec(uuid("9fb9ac9c-7df5-423b-b436-b250b0b86e1d"))
+/* interface */ ICogCalibCheckerboardParams_Disp;
+struct __declspec(uuid("575d1f14-afcc-4cde-8ea7-777866999723"))
+/* interface */ ICogCalibCheckerboardWarpParams_Disp;
+struct __declspec(uuid("e48efda6-ce99-4b8d-b774-20a8b328d5fc"))
+/* interface */ ICogCalibCheckerboardTool_Disp;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICogFixtureParams, __uuidof(ICogFixtureParams));
+_COM_SMARTPTR_TYPEDEF(ICogFixture, __uuidof(ICogFixture));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureTool, __uuidof(ICogFixtureTool));
+_COM_SMARTPTR_TYPEDEF(ICogNPointToNPoint, __uuidof(ICogNPointToNPoint));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPointResult, __uuidof(ICogFixtureNPointToNPointResult));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPointParams, __uuidof(ICogFixtureNPointToNPointParams));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPoint, __uuidof(ICogFixtureNPointToNPoint));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPointTool, __uuidof(ICogFixtureNPointToNPointTool));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPointRunParams, __uuidof(ICogCalibNPointToNPointRunParams));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPointParams, __uuidof(ICogCalibNPointToNPointParams));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPoint, __uuidof(ICogCalibNPointToNPoint));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPointTool, __uuidof(ICogCalibNPointToNPointTool));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardRunParams, __uuidof(ICogCalibCheckerboardRunParams));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardWarpParams, __uuidof(ICogCalibCheckerboardWarpParams));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardParams, __uuidof(ICogCalibCheckerboardParams));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboard, __uuidof(ICogCalibCheckerboard));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardTool, __uuidof(ICogCalibCheckerboardTool));
+_COM_SMARTPTR_TYPEDEF(ICogFixture_Disp, __uuidof(ICogFixture_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureParams_Disp, __uuidof(ICogFixtureParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureTool_Disp, __uuidof(ICogFixtureTool_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogNPointToNPoint_Disp, __uuidof(ICogNPointToNPoint_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPoint_Disp, __uuidof(ICogFixtureNPointToNPoint_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPointParams_Disp, __uuidof(ICogFixtureNPointToNPointParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPointResult_Disp, __uuidof(ICogFixtureNPointToNPointResult_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogFixtureNPointToNPointTool_Disp, __uuidof(ICogFixtureNPointToNPointTool_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPointRunParams_Disp, __uuidof(ICogCalibNPointToNPointRunParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPoint_Disp, __uuidof(ICogCalibNPointToNPoint_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPointParams_Disp, __uuidof(ICogCalibNPointToNPointParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibNPointToNPointTool_Disp, __uuidof(ICogCalibNPointToNPointTool_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardRunParams_Disp, __uuidof(ICogCalibCheckerboardRunParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboard_Disp, __uuidof(ICogCalibCheckerboard_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardParams_Disp, __uuidof(ICogCalibCheckerboardParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardWarpParams_Disp, __uuidof(ICogCalibCheckerboardWarpParams_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogCalibCheckerboardTool_Disp, __uuidof(ICogCalibCheckerboardTool_Disp));
+
+//
+// Type library items
+//
+
+enum CogCalibFixErrConstants
+{
+    e_CogCalibFix_NPointTooFew = -2147205120,
+    e_CogCalibFix_NPointUnstable = -2147205119,
+    e_CogCalibFix_NotCalibrated = -2147205118,
+    e_CogCalibFix_CannotWarp = -2147205117,
+    e_CogCalibFix_BadDestRect = -2147205116,
+    e_CogCalibFix_NoCalibrationImage = -2147205115,
+    e_CogCalibFix_NoFiducial = -2147205114,
+    e_CogCalibFix_TooFewVertices = -2147205113,
+    e_CogCalibFix_CheckerboardMathUnstable = -2147205112
+};
+
+enum CogCalibFixMsgConstants
+{
+    ids_CogCalibFix_CalNoOperator = -2147220992,
+    ids_CogCalibFix_FixNoOperator = -2147220991,
+    ids_CogCalibFix_NotCalibrated = -2147220990,
+    ids_CogCalibFix_InvalidArgPerspRadXform_1 = -2147220989,
+    ids_CogCalibFix_InvalidArgBadSSNInRect_2 = -2147220988,
+    ids_CogCalibFix_NotWholePixelShift = -2147220987,
+    ids_CogCalibFix_InfoBigRMSError = -2147220976,
+    ids_CogCalibFix_InfoSmallRMSError = -2147220975,
+    ids_CogCalibFix_InfoBigFixtureScale = -2147220974,
+    ids_CogCalibFix_InfoSmallFixtureScale = -2147220973,
+    ids_CogCalibFix_InfoCheckerBigRMSErrorNonlin = -2147220972,
+    ids_CogCalibFix_InfoCheckerBigRMSErrorLin = -2147220971,
+    ids_CogCalibFix_InfoCheckerSmallRMSErrorNonlin = -2147220970,
+    ids_CogCalibFix_InfoCheckerSmallRMSErrorLin = -2147220969,
+    ids_CogCalibFix_TipTextUncalPt = -2147220960,
+    ids_CogCalibFix_TipTextRawCalPt = -2147220959,
+    ids_CogCalibFix_TipTextUnfixPt = -2147220958,
+    ids_CogCalibFix_TipTextRawFixPt = -2147220957,
+    ids_CogCalibFix_TipTextUncalSpace = -2147220956,
+    ids_CogCalibFix_TipTextRawCalSpace = -2147220955,
+    ids_CogCalibFix_TipTextCalSpace = -2147220954,
+    ids_CogCalibFix_TipTextUnfixSpace = -2147220953,
+    ids_CogCalibFix_TipTextRawFixSpace = -2147220952,
+    ids_CogCalibFix_TipTextFixSpace = -2147220951
+};
+
+enum CogCalibSpaceToOutputConstants
+{
+    cogCalibSpaceToOutputCalibratedSpace = 0,
+    cogCalibSpaceToOutputUncalibratedSpace = 1
+};
+
+enum CogFixtureSpaceToOutputConstants
+{
+    cogFixtureSpaceToOutputFixturedSpace = 0,
+    cogFixtureSpaceToOutputUnfixturedSpace = 1
+};
+
+enum CogFixturedSpaceNameDuplicateHandlingConstants
+{
+    cogFixturedSpaceNameDuplicateHandlingCompatibility = 1,
+    cogFixturedSpaceNameDuplicateHandlingEnhanced = 2
+};
+
+enum CogCalibFixComputationModeConstants
+{
+    cogCalibFixComputationModeLinear = 1,
+    cogCalibFixComputationModePerspectiveAndRadialWarp = 2,
+    cogCalibFixComputationModeLinescanWarp = 3,
+    cogCalibFixComputationModeLinescan2DWarp = 4
+};
+
+enum CogFixtureStateIDs
+{
+    cogFixture_FixturedSpaceName = 16801793,
+    cogFixture_UnfixturedFromFixturedTransform = 16801794,
+    cogFixture_SpaceToOutput = 16801795,
+    cogFixture_FixturedSpaceNameDuplicateHandling = 16801826
+};
+
+struct __declspec(uuid("5bfd16b3-c432-4210-beae-ee721e094fbc"))
+ICogFixtureParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_FixturedSpaceName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_FixturedSpaceName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfixturedFromFixturedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_UnfixturedFromFixturedTransform (
+        struct ICogTransform2D * pVal ) = 0;
+    virtual HRESULT __stdcall get_SpaceToOutput (
+        enum CogFixtureSpaceToOutputConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SpaceToOutput (
+        enum CogFixtureSpaceToOutputConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_FixturedSpaceNameDuplicateHandling (
+        enum CogFixturedSpaceNameDuplicateHandlingConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_FixturedSpaceNameDuplicateHandling (
+        enum CogFixturedSpaceNameDuplicateHandlingConstants pVal ) = 0;
+};
+
+struct __declspec(uuid("b230a183-d217-11d5-bd43-00104b1caa62"))
+ICogFixture : ICogFixtureParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Execute (
+        struct ICogImage * InputImage,
+        struct ICogImage * * OutputImage ) = 0;
+};
+
+struct __declspec(uuid("b230a184-d217-11d5-bd43-00104b1caa62"))
+CogFixture;
+    // [ default ] interface ICogFixture
+    // interface ICogFixtureParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("d579b3c0-d232-11d5-bd43-00104b1caa62"))
+CogFixtureParams;
+    // [ default ] interface ICogFixtureParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogFixtureToolStateIDs
+{
+    cogFixtureTool_RunStatus = 16896000,
+    cogFixtureTool_ToolName = 16896002,
+    cogFixtureTool_LastRunRecordEnable = 16896004,
+    cogFixtureTool_LastRunRecordDiagEnable = 16896005,
+    cogFixtureTool_CurrentRecordEnable = 16896006,
+    cogFixtureTool_InputImage = 16801802,
+    cogFixtureTool_RunParams = 16801803,
+    cogFixtureTool_OutputImage = 16801804
+};
+
+enum CogFixtureCurrentRecordConstants
+{
+    cogFixtureCurrentRecordNone = 0,
+    cogFixtureCurrentRecordInputImage = 1,
+    cogFixtureCurrentRecordUnfixturedAxes = 2,
+    cogFixtureCurrentRecordFixturedAxes = 4,
+    cogFixtureCurrentRecordAll = -1
+};
+
+enum CogFixtureLastRunRecordDiagConstants
+{
+    cogFixtureLastRunRecordDiagNone = 0,
+    cogFixtureLastRunRecordDiagInputImageByReference = 1,
+    cogFixtureLastRunRecordDiagUnfixturedAxes = 16,
+    cogFixtureLastRunRecordDiagFixturedAxes = 32,
+    cogFixtureLastRunRecordDiagAll = -1
+};
+
+enum CogFixtureLastRunRecordConstants
+{
+    cogFixtureLastRunRecordNone = 0,
+    cogFixtureLastRunRecordOutputImage = 1,
+    cogFixtureLastRunRecordAll = -1
+};
+
+struct __declspec(uuid("93c44d11-b9c7-11d5-bd3d-00104b1caa62"))
+ICogFixtureTool : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogFixtureLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogFixtureLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogFixtureLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogFixtureLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogFixtureCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogFixtureCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_InputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_InputImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_RunParams (
+        struct ICogFixtureParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_RunParams (
+        struct ICogFixtureParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImage (
+        struct ICogImage * * pVal ) = 0;
+};
+
+struct __declspec(uuid("93c44d12-b9c7-11d5-bd3d-00104b1caa62"))
+CogFixtureTool;
+    // [ default ] interface ICogFixtureTool
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] dispinterface ICogToolEvents
+
+enum CogNPointToNPointDOFConstants
+{
+    cogNPointToNPointDOFNone = 0,
+    cogNPointToNPointDOFTranslationX = 1,
+    cogNPointToNPointDOFTranslationY = 2,
+    cogNPointToNPointDOFTranslation = 3,
+    cogNPointToNPointDOFRotationAndTranslation = 4,
+    cogNPointToNPointDOFScalingRotationAndTranslation = 5,
+    cogNPointToNPointDOFScalingAspectRotationAndTranslation = 6,
+    cogNPointToNPointDOFScalingAspectRotationSkewAndTranslation = 7
+};
+
+enum CogFAs_NPointToNPoint
+{
+    cogFA_NPointToNPoint_PointSet = 32,
+    cogFA_NPointToNPoint_ComputeResults = 64
+};
+
+enum CogNPointToNPointStateIDs
+{
+    cogNPointToNPoint_NumPoints = 16936963,
+    cogNPointToNPoint_GroupBPointX = 16936964,
+    cogNPointToNPoint_GroupBPointY = 16936965,
+    cogNPointToNPoint_GroupAPointX = 16936966,
+    cogNPointToNPoint_GroupAPointY = 16936967,
+    cogNPointToNPoint_DOFsToCompute = 16936968,
+    cogNPointToNPoint_ComputationMode = 16937098
+};
+
+struct __declspec(uuid("770734a3-bd16-11d5-bd3d-00104b1caa62"))
+ICogNPointToNPoint : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NumPoints (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_NumPoints (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_GroupAPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GroupAPointX (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GroupAPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GroupAPointY (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GroupBPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GroupBPointX (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_GroupBPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_GroupBPointY (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall SetGroupAPoint (
+        long Index,
+        double X,
+        double Y ) = 0;
+    virtual HRESULT __stdcall SetGroupBPoint (
+        long Index,
+        double X,
+        double Y ) = 0;
+    virtual HRESULT __stdcall GetGroupAPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall GetGroupBPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall AddPointPair (
+        double GroupAX,
+        double GroupAY,
+        double GroupBX,
+        double GroupBY ) = 0;
+    virtual HRESULT __stdcall DeletePointPair (
+        long Index ) = 0;
+    virtual HRESULT __stdcall get_DOFsToCompute (
+        enum CogNPointToNPointDOFConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_DOFsToCompute (
+        enum CogNPointToNPointDOFConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputationMode (
+        enum CogCalibFixComputationModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_ComputationMode (
+        enum CogCalibFixComputationModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall ComputeGroupAFromGroupBTransform (
+        double * RMSError,
+        struct ICogTransform2D * * GroupAFromGroupB ) = 0;
+};
+
+struct __declspec(uuid("770734a4-bd16-11d5-bd3d-00104b1caa62"))
+CogNPointToNPoint;
+    // [ default ] interface ICogNPointToNPoint
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("c5b48694-cef6-11d5-bd43-00104b1caa62"))
+ICogFixtureNPointToNPointResult : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_OutputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall GetUnfixturedFromFixturedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall GetUnfixturedFromRawFixturedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall get_RMSError (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+};
+
+enum CogFixtureNPointToNPointStateIDs
+{
+    cogFixtureNPointToNPoint_NumPoints = 16936979,
+    cogFixtureNPointToNPoint_RawFixturedPointX = 16936980,
+    cogFixtureNPointToNPoint_RawFixturedPointY = 16936981,
+    cogFixtureNPointToNPoint_UnfixturedPointX = 16936982,
+    cogFixtureNPointToNPoint_UnfixturedPointY = 16936983,
+    cogFixtureNPointToNPoint_DOFsToCompute = 16936984,
+    cogFixtureNPointToNPoint_ComputationMode = 16937099,
+    cogFixtureNPointToNPoint_RawFixturedFromFixturedTransformEnabled = 16936985,
+    cogFixtureNPointToNPoint_RawFixturedFromFixturedTransform = 16936986,
+    cogFixtureNPointToNPoint_FixturedSpaceName = 16936987,
+    cogFixtureNPointToNPoint_SpaceToOutput = 16936988,
+    cogFixtureNPointToNPoint_FixturedSpaceNameDuplicateHandling = 16937101
+};
+
+struct __declspec(uuid("498ad78e-1c6e-48ea-94d3-4cf41ad92ac4"))
+ICogFixtureNPointToNPointParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NumPoints (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_NumPoints (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfixturedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfixturedPointX (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfixturedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfixturedPointY (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RawFixturedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_RawFixturedPointX (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RawFixturedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_RawFixturedPointY (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall SetUnfixturedPoint (
+        long Index,
+        double X,
+        double Y ) = 0;
+    virtual HRESULT __stdcall SetRawFixturedPoint (
+        long Index,
+        double X,
+        double Y ) = 0;
+    virtual HRESULT __stdcall GetUnfixturedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall GetRawFixturedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall AddPointPair (
+        double UnfixturedX,
+        double UnfixturedY,
+        double RawFixturedX,
+        double RawFixturedY ) = 0;
+    virtual HRESULT __stdcall DeletePointPair (
+        long Index ) = 0;
+    virtual HRESULT __stdcall get_DOFsToCompute (
+        enum CogNPointToNPointDOFConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_DOFsToCompute (
+        enum CogNPointToNPointDOFConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputationMode (
+        enum CogCalibFixComputationModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_ComputationMode (
+        enum CogCalibFixComputationModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_RawFixturedFromFixturedTransformEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_RawFixturedFromFixturedTransformEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_RawFixturedFromFixturedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_RawFixturedFromFixturedTransform (
+        struct ICogTransform2D * pVal ) = 0;
+    virtual HRESULT __stdcall get_FixturedSpaceName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_FixturedSpaceName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SpaceToOutput (
+        enum CogFixtureSpaceToOutputConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SpaceToOutput (
+        enum CogFixtureSpaceToOutputConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_FixturedSpaceNameDuplicateHandling (
+        enum CogFixturedSpaceNameDuplicateHandlingConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_FixturedSpaceNameDuplicateHandling (
+        enum CogFixturedSpaceNameDuplicateHandlingConstants pVal ) = 0;
+};
+
+struct __declspec(uuid("444cacd3-cf00-11d5-bd43-00104b1caa62"))
+ICogFixtureNPointToNPoint : ICogFixtureNPointToNPointParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Execute (
+        struct ICogImage * InputImage,
+        struct ICogFixtureNPointToNPointResult * * Result ) = 0;
+};
+
+struct __declspec(uuid("444cacd4-cf00-11d5-bd43-00104b1caa62"))
+CogFixtureNPointToNPoint;
+    // [ default ] interface ICogFixtureNPointToNPoint
+    // interface ICogFixtureNPointToNPointParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("036f2291-c34b-11d5-bd3e-00104b1caa62"))
+CogFixtureNPointToNPointParams;
+    // [ default ] interface ICogFixtureNPointToNPointParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("c5b48695-cef6-11d5-bd43-00104b1caa62"))
+CogFixtureNPointToNPointResult;
+    // [ default ] interface ICogFixtureNPointToNPointResult
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+
+enum CogFixtureNPointToNPointToolStateIDs
+{
+    cogFixtureNPointToNPointTool_RunStatus = 16896000,
+    cogFixtureNPointToNPointTool_ToolName = 16896002,
+    cogFixtureNPointToNPointTool_LastRunRecordEnable = 16896004,
+    cogFixtureNPointToNPointTool_LastRunRecordDiagEnable = 16896005,
+    cogFixtureNPointToNPointTool_CurrentRecordEnable = 16896006,
+    cogFixtureNPointToNPointTool_InputImage = 16937007,
+    cogFixtureNPointToNPointTool_ReferenceImage = 16937008,
+    cogFixtureNPointToNPointTool_ReferenceImageEnabled = 16937009,
+    cogFixtureNPointToNPointTool_RunParams = 16937010,
+    cogFixtureNPointToNPointTool_Result = 16937011
+};
+
+enum CogFixtureNPointToNPointCurrentRecordConstants
+{
+    cogFixtureNPointToNPointCurrentRecordNone = 0,
+    cogFixtureNPointToNPointCurrentRecordInputImage = 1,
+    cogFixtureNPointToNPointCurrentRecordUnfixturedAxes = 2,
+    cogFixtureNPointToNPointCurrentRecordUnfixturedPoints = 4,
+    cogFixtureNPointToNPointCurrentRecordRefImage = 16,
+    cogFixtureNPointToNPointCurrentRecordRawFixturedAxes = 32,
+    cogFixtureNPointToNPointCurrentRecordRawFixturedPoints = 64,
+    cogFixtureNPointToNPointCurrentRecordFixturedAxes = 128,
+    cogFixtureNPointToNPointCurrentRecordAll = -1
+};
+
+enum CogFixtureNPointToNPointLastRunRecordDiagConstants
+{
+    cogFixtureNPointToNPointLastRunRecordDiagNone = 0,
+    cogFixtureNPointToNPointLastRunRecordDiagInputImageByReference = 1,
+    cogFixtureNPointToNPointLastRunRecordDiagUnfixturedAxes = 16,
+    cogFixtureNPointToNPointLastRunRecordDiagFixturedAxes = 32,
+    cogFixtureNPointToNPointLastRunRecordDiagUnfixturedPoints = 256,
+    cogFixtureNPointToNPointLastRunRecordDiagRawFixturedPoints = 512,
+    cogFixtureNPointToNPointLastRunRecordDiagRawFixturedAxes = 1024,
+    cogFixtureNPointToNPointLastRunRecordDiagAll = -1
+};
+
+enum CogFixtureNPointToNPointLastRunRecordConstants
+{
+    cogFixtureNPointToNPointLastRunRecordNone = 0,
+    cogFixtureNPointToNPointLastRunRecordOutputImage = 1,
+    cogFixtureNPointToNPointLastRunRecordAll = -1
+};
+
+struct __declspec(uuid("ad66f993-bd1a-11d5-bd3d-00104b1caa62"))
+ICogFixtureNPointToNPointTool : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogFixtureNPointToNPointLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogFixtureNPointToNPointLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogFixtureNPointToNPointLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogFixtureNPointToNPointLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogFixtureNPointToNPointCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogFixtureNPointToNPointCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_InputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_InputImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReferenceImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_ReferenceImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReferenceImageEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_ReferenceImageEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_RunParams (
+        struct ICogFixtureNPointToNPointParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_RunParams (
+        struct ICogFixtureNPointToNPointParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_Result (
+        struct ICogFixtureNPointToNPointResult * * pVal ) = 0;
+};
+
+struct __declspec(uuid("ad66f994-bd1a-11d5-bd3d-00104b1caa62"))
+CogFixtureNPointToNPointTool;
+    // [ default ] interface ICogFixtureNPointToNPointTool
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] dispinterface ICogToolEvents
+
+enum CogCalibNPointToNPointRunParamsStateIDs
+{
+    cogCalibNPointToNPointRunParams_CalibratedSpaceName = 16937018,
+    cogCalibNPointToNPointRunParams_SpaceToOutput = 16937019
+};
+
+struct __declspec(uuid("5b922ac3-d219-11d5-bd43-00104b1caa62"))
+ICogCalibNPointToNPointRunParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CalibratedSpaceName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedSpaceName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SpaceToOutput (
+        enum CogCalibSpaceToOutputConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SpaceToOutput (
+        enum CogCalibSpaceToOutputConstants pVal ) = 0;
+};
+
+struct __declspec(uuid("5b922ac4-d219-11d5-bd43-00104b1caa62"))
+CogCalibNPointToNPointRunParams;
+    // [ default ] interface ICogCalibNPointToNPointRunParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogCalibNPointAdjustmentSpaceConstants
+{
+    cogCalibNPointAdjustmentSpaceRawCalibrated = 0,
+    cogCalibNPointAdjustmentSpaceUncalibrated = 1
+};
+
+enum CogCalibNPointToNPointStateIDs
+{
+    cogCalibNPointToNPoint_NumPoints = 16937024,
+    cogCalibNPointToNPoint_RawCalibratedPointX = 16937025,
+    cogCalibNPointToNPoint_RawCalibratedPointY = 16937026,
+    cogCalibNPointToNPoint_UncalibratedPointX = 16937027,
+    cogCalibNPointToNPoint_UncalibratedPointY = 16937028,
+    cogCalibNPointToNPoint_DOFsToCompute = 16937029,
+    cogCalibNPointToNPoint_CalibratedOriginX = 16937030,
+    cogCalibNPointToNPoint_CalibratedOriginY = 16937031,
+    cogCalibNPointToNPoint_CalibratedOriginSpace = 16937032,
+    cogCalibNPointToNPoint_CalibratedXAxisRotation = 16937033,
+    cogCalibNPointToNPoint_CalibratedXAxisRotationSpace = 16937034,
+    cogCalibNPointToNPoint_SwapCalibratedHandedness = 16937035,
+    cogCalibNPointToNPoint_Calibrated = 16937036,
+    cogCalibNPointToNPoint_ComputedUncalibratedFromCalibratedTransform = 16937037,
+    cogCalibNPointToNPoint_ComputedUncalibratedFromRawCalibratedTransform = 16937038,
+    cogCalibNPointToNPoint_ComputedRMSError = 16937039,
+    cogCalibNPointToNPoint_ComputationMode = 16937100,
+    cogCalibNPointToNPoint_InfoStrings = 16937097
+};
+
+struct __declspec(uuid("c1b70e11-bdd1-11d5-bd3d-00104b1caa62"))
+ICogCalibNPointToNPointParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NumPoints (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_NumPoints (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_UncalibratedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_UncalibratedPointX (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_UncalibratedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_UncalibratedPointY (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RawCalibratedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_RawCalibratedPointX (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_RawCalibratedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_RawCalibratedPointY (
+        long Index,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall SetUncalibratedPoint (
+        long Index,
+        double X,
+        double Y ) = 0;
+    virtual HRESULT __stdcall SetRawCalibratedPoint (
+        long Index,
+        double X,
+        double Y ) = 0;
+    virtual HRESULT __stdcall GetUncalibratedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall GetRawCalibratedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall AddPointPair (
+        double UncalibratedX,
+        double UncalibratedY,
+        double RawCalibratedX,
+        double RawCalibratedY ) = 0;
+    virtual HRESULT __stdcall DeletePointPair (
+        long Index ) = 0;
+    virtual HRESULT __stdcall get_DOFsToCompute (
+        enum CogNPointToNPointDOFConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_DOFsToCompute (
+        enum CogNPointToNPointDOFConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputationMode (
+        enum CogCalibFixComputationModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_ComputationMode (
+        enum CogCalibFixComputationModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginX (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginX (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginY (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginY (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginSpace (
+        enum CogCalibNPointAdjustmentSpaceConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginSpace (
+        enum CogCalibNPointAdjustmentSpaceConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedXAxisRotation (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedXAxisRotation (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedXAxisRotationSpace (
+        enum CogCalibNPointAdjustmentSpaceConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedXAxisRotationSpace (
+        enum CogCalibNPointAdjustmentSpaceConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_SwapCalibratedHandedness (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_SwapCalibratedHandedness (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Calibrated (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall GetComputedUncalibratedFromCalibratedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall GetComputedUncalibratedFromRawCalibratedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputedRMSError (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall Calibrate ( ) = 0;
+    virtual HRESULT __stdcall Uncalibrate ( ) = 0;
+};
+
+struct __declspec(uuid("95e5df14-ca6a-11d5-bd41-00104b1caa62"))
+ICogCalibNPointToNPoint : ICogCalibNPointToNPointParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Execute (
+        struct ICogImage * InputImage,
+        struct ICogCalibNPointToNPointRunParams * RunParams,
+        struct ICogImage * * OutputImage ) = 0;
+};
+
+struct __declspec(uuid("95e5df15-ca6a-11d5-bd41-00104b1caa62"))
+CogCalibNPointToNPoint;
+    // [ default ] interface ICogCalibNPointToNPoint
+    // interface ICogCalibNPointToNPointParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("036f2290-c34b-11d5-bd3e-00104b1caa62"))
+CogCalibNPointToNPointParams;
+    // [ default ] interface ICogCalibNPointToNPointParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogCalibNPointToNPointToolStateIDs
+{
+    cogCalibNPointToNPointTool_RunStatus = 16896000,
+    cogCalibNPointToNPointTool_ToolName = 16896002,
+    cogCalibNPointToNPointTool_LastRunRecordEnable = 16896004,
+    cogCalibNPointToNPointTool_LastRunRecordDiagEnable = 16896005,
+    cogCalibNPointToNPointTool_CurrentRecordEnable = 16896006,
+    cogCalibNPointToNPointTool_InputImage = 16937054,
+    cogCalibNPointToNPointTool_CalibrationImage = 16937055,
+    cogCalibNPointToNPointTool_Calibration = 16937056,
+    cogCalibNPointToNPointTool_RunParams = 16937057,
+    cogCalibNPointToNPointTool_OutputImage = 16937058
+};
+
+enum CogCalibNPointToNPointCurrentRecordConstants
+{
+    cogCalibNPointToNPointCurrentRecordNone = 0,
+    cogCalibNPointToNPointCurrentRecordInputImage = 1,
+    cogCalibNPointToNPointCurrentRecordUncalibratedAxes = 2,
+    cogCalibNPointToNPointCurrentRecordCalibratedAxes = 4,
+    cogCalibNPointToNPointCurrentRecordCalibrationImage = 16,
+    cogCalibNPointToNPointCurrentRecordCalUncalibratedAxes = 32,
+    cogCalibNPointToNPointCurrentRecordCalUncalibratedPoints = 64,
+    cogCalibNPointToNPointCurrentRecordCalCalibratedAxes = 128,
+    cogCalibNPointToNPointCurrentRecordCalRawCalibratedAxes = 256,
+    cogCalibNPointToNPointCurrentRecordCalRawCalibratedPoints = 512,
+    cogCalibNPointToNPointCurrentRecordAll = -1
+};
+
+enum CogCalibNPointToNPointLastRunRecordDiagConstants
+{
+    cogCalibNPointToNPointLastRunRecordDiagNone = 0,
+    cogCalibNPointToNPointLastRunRecordDiagInputImageByReference = 1,
+    cogCalibNPointToNPointLastRunRecordDiagUncalibratedAxes = 16,
+    cogCalibNPointToNPointLastRunRecordDiagCalibratedAxes = 32,
+    cogCalibNPointToNPointLastRunRecordDiagAll = -1
+};
+
+enum CogCalibNPointToNPointLastRunRecordConstants
+{
+    cogCalibNPointToNPointLastRunRecordNone = 0,
+    cogCalibNPointToNPointLastRunRecordOutputImage = 1,
+    cogCalibNPointToNPointLastRunRecordAll = -1
+};
+
+struct __declspec(uuid("770734a6-bd16-11d5-bd3d-00104b1caa62"))
+ICogCalibNPointToNPointTool : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogCalibNPointToNPointLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogCalibNPointToNPointLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogCalibNPointToNPointLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogCalibNPointToNPointLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogCalibNPointToNPointCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogCalibNPointToNPointCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_InputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_InputImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibrationImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_CalibrationImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_Calibration (
+        struct ICogCalibNPointToNPointParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Calibration (
+        struct ICogCalibNPointToNPointParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_RunParams (
+        struct ICogCalibNPointToNPointRunParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_RunParams (
+        struct ICogCalibNPointToNPointRunParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImage (
+        struct ICogImage * * pVal ) = 0;
+};
+
+struct __declspec(uuid("770734a7-bd16-11d5-bd3d-00104b1caa62"))
+CogCalibNPointToNPointTool;
+    // [ default ] interface ICogCalibNPointToNPointTool
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] dispinterface ICogToolEvents
+
+enum CogCalibCheckerboardDOFConstants
+{
+    cogCalibCheckerboardDOFNone = 0,
+    cogCalibCheckerboardDOFTranslationX = 1,
+    cogCalibCheckerboardDOFTranslationY = 2,
+    cogCalibCheckerboardDOFTranslation = 3,
+    cogCalibCheckerboardDOFRotationAndTranslation = 4,
+    cogCalibCheckerboardDOFScalingRotationAndTranslation = 5,
+    cogCalibCheckerboardDOFScalingAspectRotationAndTranslation = 6,
+    cogCalibCheckerboardDOFScalingAspectRotationSkewAndTranslation = 7
+};
+
+enum CogFAs_CalibCheckerboard
+{
+    cogFA_CalibCheckerboard_PointSet = 32,
+    cogFA_CalibCheckerboard_ComputeResults = 64,
+    cogFA_CalibCheckerboard_WarpParams = 128,
+    cogFA_CalibCheckerboard_WarpResults = 256
+};
+
+enum CogCalibCheckerboardRunParamsStateIDs
+{
+    cogCalibCheckerboardRunParams_CalibratedSpaceName = 17018928,
+    cogCalibCheckerboardRunParams_SpaceToOutput = 17018929,
+    cogCalibCheckerboardRunParams_UnfilledPelValueEnabled = 17018883,
+    cogCalibCheckerboardRunParams_UnfilledPelValue = 17018884,
+    cogCalibCheckerboardRunParams_UnfilledPelPlane0Value = 17018887,
+    cogCalibCheckerboardRunParams_UnfilledPelPlane1Value = 17018893,
+    cogCalibCheckerboardRunParams_UnfilledPelPlane2Value = 17018962
+};
+
+struct __declspec(uuid("ee4aad2c-ac2c-4a73-b806-6d8faf9372f4"))
+ICogCalibCheckerboardRunParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CalibratedSpaceName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedSpaceName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SpaceToOutput (
+        enum CogCalibSpaceToOutputConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_SpaceToOutput (
+        enum CogCalibSpaceToOutputConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfilledPelValueEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfilledPelValueEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfilledPelValue (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfilledPelValue (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfilledPelPlane0Value (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfilledPelPlane0Value (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfilledPelPlane1Value (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfilledPelPlane1Value (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_UnfilledPelPlane2Value (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_UnfilledPelPlane2Value (
+        long pVal ) = 0;
+};
+
+struct __declspec(uuid("40f09c13-26ee-4212-bff0-9f2bde5b670f"))
+CogCalibCheckerboardRunParams;
+    // [ default ] interface ICogCalibCheckerboardRunParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogCalibCheckerboardWarpParamsStateIDs
+{
+    cogCalibCheckerboardWarpParams_WarpMaxErrorInPixels = 17018889,
+    cogCalibCheckerboardWarpParams_WarpDestinationRectangle = 17018890,
+    cogCalibCheckerboardWarpParams_WarpScaling = 17018891,
+    cogCalibCheckerboardWarpParams_WarpRotation = 17018892,
+    cogCalibCheckerboardWarpParams_UndistortedCalibrationImage = 17018894,
+    cogCalibCheckerboardWarpParams_UndistortedCalibrationImageMask = 17018895,
+    cogCalibCheckerboardWarpParams_OutputImageMask = 17018896,
+    cogCalibCheckerboardWarpParams_OutputImageRootFromCalibratedTransform = 17018897
+};
+
+struct __declspec(uuid("efcce36c-119d-4268-b4e3-35b7c0bac83e"))
+ICogCalibCheckerboardWarpParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_WarpMaxErrorInPixels (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpMaxErrorInPixels (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpDestinationRectangle (
+        struct ICogRectangle * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_WarpDestinationRectangle (
+        struct ICogRectangle * pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpScaling (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpScaling (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpRotation (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpRotation (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_UndistortedCalibrationImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall get_UndistortedCalibrationImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall GetOutputImageRootFromCalibratedTransform (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall GetInputPixelFromOutputPixelTransform (
+        struct ICogImage * InputImage,
+        struct ICogTransform2D * * pVal ) = 0;
+};
+
+enum CogCalibCheckerboardFiducialConstants
+{
+    cogCalibCheckerboardFiducialNone = 0,
+    cogCalibCheckerboardFiducialStandardRectangles = 1,
+    cogCalibCheckerboardFiducialDotGridAxes = 2
+};
+
+enum CogCalibCheckerboardFeatureFinderConstants
+{
+    cogCalibCheckerboardFeatureFinderCheckerboard = 0,
+    cogCalibCheckerboardFeatureFinderCheckerboardExhaustive = 1,
+    cogCalibCheckerboardFeatureFinderDotGrid = 2
+};
+
+enum CogCalibCheckerboardAdjustmentSpaceConstants
+{
+    cogCalibCheckerboardAdjustmentSpaceRawCalibrated = 0,
+    cogCalibCheckerboardAdjustmentSpaceUncalibrated = 1
+};
+
+enum CogCalibCheckerboardStateIDs
+{
+    cogCalibCheckerboard_CalibrationImage = 17018903,
+    cogCalibCheckerboard_PhysicalTileSizeX = 17018904,
+    cogCalibCheckerboard_PhysicalTileSizeY = 17018905,
+    cogCalibCheckerboard_FiducialMark = 17018906,
+    cogCalibCheckerboard_NumPoints = 17018930,
+    cogCalibCheckerboard_RawCalibratedPointX = 17018931,
+    cogCalibCheckerboard_RawCalibratedPointY = 17018932,
+    cogCalibCheckerboard_UncalibratedPointX = 17018933,
+    cogCalibCheckerboard_UncalibratedPointY = 17018934,
+    cogCalibCheckerboard_DOFsToCompute = 17018935,
+    cogCalibCheckerboard_CalibratedOriginX = 17018936,
+    cogCalibCheckerboard_CalibratedOriginY = 17018937,
+    cogCalibCheckerboard_CalibratedOriginSpace = 17018938,
+    cogCalibCheckerboard_CalibratedXAxisRotation = 17018939,
+    cogCalibCheckerboard_CalibratedXAxisRotationSpace = 17018940,
+    cogCalibCheckerboard_SwapCalibratedHandedness = 17018941,
+    cogCalibCheckerboard_Calibrated = 17018942,
+    cogCalibCheckerboard_ComputedUncalibratedFromCalibratedTransform = 17018943,
+    cogCalibCheckerboard_ComputedUncalibratedFromRawCalibratedTransform = 17018944,
+    cogCalibCheckerboard_ComputedRMSError = 17018945,
+    cogCalibCheckerboard_ComputationMode = 17018907,
+    cogCalibCheckerboard_InfoStrings = 17018908,
+    cogCalibCheckerboard_WarpParams = 17018909,
+    cogCalibCheckerboard_FeatureFinder = 17018964,
+    cogCalibCheckerboard_LinescanDistanceToTarget = 17018965,
+    cogCalibCheckerboard_LinescanDistanceToTargetEnabled = 17018966
+};
+
+struct __declspec(uuid("d38b9ed0-2dc8-4397-8140-40546cd59534"))
+ICogCalibCheckerboardParams : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CalibrationImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_CalibrationImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_PhysicalTileSizeX (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_PhysicalTileSizeX (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_PhysicalTileSizeY (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_PhysicalTileSizeY (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_FiducialMark (
+        enum CogCalibCheckerboardFiducialConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_FiducialMark (
+        enum CogCalibCheckerboardFiducialConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_FeatureFinder (
+        enum CogCalibCheckerboardFeatureFinderConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_FeatureFinder (
+        enum CogCalibCheckerboardFeatureFinderConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LinescanDistanceToTarget (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_LinescanDistanceToTarget (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_LinescanDistanceToTargetEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_LinescanDistanceToTargetEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_NumPoints (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_UncalibratedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_UncalibratedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_RawCalibratedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_RawCalibratedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetUncalibratedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall GetRawCalibratedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall get_DOFsToCompute (
+        enum CogCalibCheckerboardDOFConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_DOFsToCompute (
+        enum CogCalibCheckerboardDOFConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputationMode (
+        enum CogCalibFixComputationModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_ComputationMode (
+        enum CogCalibFixComputationModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginX (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginX (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginY (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginY (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedXAxisRotation (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedXAxisRotation (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedXAxisRotationSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedXAxisRotationSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_SwapCalibratedHandedness (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_SwapCalibratedHandedness (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Calibrated (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall GetComputedUncalibratedFromCalibratedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall GetComputedUncalibratedFromRawCalibratedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputedRMSError (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpParams (
+        struct ICogCalibCheckerboardWarpParams * * pVal ) = 0;
+    virtual HRESULT __stdcall Calibrate ( ) = 0;
+    virtual HRESULT __stdcall Uncalibrate ( ) = 0;
+};
+
+struct __declspec(uuid("dcbfa9af-4b3e-42cb-a582-ff0769017ab6"))
+ICogCalibCheckerboard : ICogCalibCheckerboardParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Execute (
+        struct ICogImage * InputImage,
+        struct ICogCalibCheckerboardRunParams * RunParams,
+        struct ICogImage * * OutputImage ) = 0;
+};
+
+struct __declspec(uuid("7c567de7-8e8c-4fff-961f-b513ca940238"))
+CogCalibCheckerboard;
+    // [ default ] interface ICogCalibCheckerboard
+    // interface ICogCalibCheckerboardParams
+    // interface ICogCalibCheckerboardWarpParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("60465363-7df5-423b-b436-b250b0b86e1d"))
+CogCalibCheckerboardParams;
+    // [ default ] interface ICogCalibCheckerboardParams
+    // interface ICogCalibCheckerboardWarpParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("a8a2e0eb-afcc-4cde-8ea7-777866999723"))
+CogCalibCheckerboardWarpParams;
+    // [ default ] interface ICogCalibCheckerboardWarpParams
+    // interface ICogCalibCheckerboardParams
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogCalibCheckerboardToolStateIDs
+{
+    cogCalibCheckerboardTool_RunStatus = 16896000,
+    cogCalibCheckerboardTool_ToolName = 16896002,
+    cogCalibCheckerboardTool_LastRunRecordEnable = 16896004,
+    cogCalibCheckerboardTool_LastRunRecordDiagEnable = 16896005,
+    cogCalibCheckerboardTool_CurrentRecordEnable = 16896006,
+    cogCalibCheckerboardTool_InputImage = 17018919,
+    cogCalibCheckerboardTool_Calibration = 17018920,
+    cogCalibCheckerboardTool_RunParams = 17018921,
+    cogCalibCheckerboardTool_OutputImage = 17018922
+};
+
+enum CogCalibCheckerboardCurrentRecordConstants
+{
+    cogCalibCheckerboardCurrentRecordNone = 0,
+    cogCalibCheckerboardCurrentRecordInputImage = 1,
+    cogCalibCheckerboardCurrentRecordUncalibratedAxes = 2,
+    cogCalibCheckerboardCurrentRecordCalibratedAxes = 4,
+    cogCalibCheckerboardCurrentRecordCalibrationImage = 16,
+    cogCalibCheckerboardCurrentRecordCalUncalibratedAxes = 32,
+    cogCalibCheckerboardCurrentRecordCalUncalibratedPoints = 64,
+    cogCalibCheckerboardCurrentRecordCalCalibratedAxes = 128,
+    cogCalibCheckerboardCurrentRecordCalRawCalibratedAxes = 256,
+    cogCalibCheckerboardCurrentRecordCalRawCalibratedPoints = 512,
+    cogCalibCheckerboardCurrentRecordUndistortedCalibrationImage = 4096,
+    cogCalibCheckerboardCurrentRecordCalDestinationRectangle = 8192,
+    cogCalibCheckerboardCurrentRecordCalUndistortedImageMask = 16384,
+    cogCalibCheckerboardCurrentRecordAll = -1
+};
+
+enum CogCalibCheckerboardLastRunRecordDiagConstants
+{
+    cogCalibCheckerboardLastRunRecordDiagNone = 0,
+    cogCalibCheckerboardLastRunRecordDiagInputImageByReference = 1,
+    cogCalibCheckerboardLastRunRecordDiagUncalibratedAxes = 16,
+    cogCalibCheckerboardLastRunRecordDiagCalibratedAxes = 32,
+    cogCalibCheckerboardLastRunRecordDiagOutputImageMask = 64,
+    cogCalibCheckerboardLastRunRecordDiagAll = -1
+};
+
+enum CogCalibCheckerboardLastRunRecordConstants
+{
+    cogCalibCheckerboardLastRunRecordNone = 0,
+    cogCalibCheckerboardLastRunRecordOutputImage = 1,
+    cogCalibCheckerboardLastRunRecordAll = -1
+};
+
+struct __declspec(uuid("3740a525-0650-4e05-9906-fa4825c8b9ad"))
+ICogCalibCheckerboardTool : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogCalibCheckerboardLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogCalibCheckerboardLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogCalibCheckerboardLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogCalibCheckerboardLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogCalibCheckerboardCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogCalibCheckerboardCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_InputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_InputImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_Calibration (
+        struct ICogCalibCheckerboardParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Calibration (
+        struct ICogCalibCheckerboardParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_RunParams (
+        struct ICogCalibCheckerboardRunParams * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_RunParams (
+        struct ICogCalibCheckerboardRunParams * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImage (
+        struct ICogImage * * pVal ) = 0;
+};
+
+struct __declspec(uuid("1b710259-ce99-4b8d-b774-20a8b328d5fc"))
+CogCalibCheckerboardTool;
+    // [ default ] interface ICogCalibCheckerboardTool
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] dispinterface ICogToolEvents
+
+struct __declspec(uuid("4dcf5e7b-d217-11d5-bd43-00104b1caa62"))
+ICogFixture_Disp : ICogFixture
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("2a864c3f-d232-11d5-bd43-00104b1caa62"))
+ICogFixtureParams_Disp : ICogFixtureParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("6c3bb2ed-b9c7-11d5-bd3d-00104b1caa62"))
+ICogFixtureTool_Disp : ICogFixtureTool
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("88f8cb5b-bd16-11d5-bd3d-00104b1caa62"))
+ICogNPointToNPoint_Disp : ICogNPointToNPoint
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("bbb3532b-cf00-11d5-bd43-00104b1caa62"))
+ICogFixtureNPointToNPoint_Disp : ICogFixtureNPointToNPoint
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("fc90dd6e-c34b-11d5-bd3e-00104b1caa62"))
+ICogFixtureNPointToNPointParams_Disp : ICogFixtureNPointToNPointParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("3a4b796a-cef6-11d5-bd43-00104b1caa62"))
+ICogFixtureNPointToNPointResult_Disp : ICogFixtureNPointToNPointResult
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("5299066b-bd1a-11d5-bd3d-00104b1caa62"))
+ICogFixtureNPointToNPointTool_Disp : ICogFixtureNPointToNPointTool
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("a46dd53b-d219-11d5-bd43-00104b1caa62"))
+ICogCalibNPointToNPointRunParams_Disp : ICogCalibNPointToNPointRunParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("6a1a20ea-ca6a-11d5-bd41-00104b1caa62"))
+ICogCalibNPointToNPoint_Disp : ICogCalibNPointToNPoint
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("fc90dd6f-c34b-11d5-bd3e-00104b1caa62"))
+ICogCalibNPointToNPointParams_Disp : ICogCalibNPointToNPointParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("88f8cb58-bd16-11d5-bd3d-00104b1caa62"))
+ICogCalibNPointToNPointTool_Disp : ICogCalibNPointToNPointTool
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("bf0f63ec-26ee-4212-bff0-9f2bde5b670f"))
+ICogCalibCheckerboardRunParams_Disp : ICogCalibCheckerboardRunParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("83a98218-8e8c-4fff-961f-b513ca940238"))
+ICogCalibCheckerboard_Disp : ICogCalibCheckerboard
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_WarpMaxErrorInPixels (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpMaxErrorInPixels (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpDestinationRectangle (
+        struct ICogRectangle * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_WarpDestinationRectangle (
+        struct ICogRectangle * pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpScaling (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpScaling (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpRotation (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpRotation (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_UndistortedCalibrationImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall get_UndistortedCalibrationImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall GetOutputImageRootFromCalibratedTransform (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall GetInputPixelFromOutputPixelTransform (
+        struct ICogImage * InputImage,
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("9fb9ac9c-7df5-423b-b436-b250b0b86e1d"))
+ICogCalibCheckerboardParams_Disp : ICogCalibCheckerboardParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_WarpMaxErrorInPixels (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpMaxErrorInPixels (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpDestinationRectangle (
+        struct ICogRectangle * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_WarpDestinationRectangle (
+        struct ICogRectangle * pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpScaling (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpScaling (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpRotation (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_WarpRotation (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_UndistortedCalibrationImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall get_UndistortedCalibrationImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImageMask (
+        struct ICogImage8Grey * * pVal ) = 0;
+    virtual HRESULT __stdcall GetOutputImageRootFromCalibratedTransform (
+        struct ICogTransform2DLinear * * pVal ) = 0;
+    virtual HRESULT __stdcall GetInputPixelFromOutputPixelTransform (
+        struct ICogImage * InputImage,
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("575d1f14-afcc-4cde-8ea7-777866999723"))
+ICogCalibCheckerboardWarpParams_Disp : ICogCalibCheckerboardWarpParams
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CalibrationImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_CalibrationImage (
+        struct ICogImage * pVal ) = 0;
+    virtual HRESULT __stdcall get_PhysicalTileSizeX (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_PhysicalTileSizeX (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_PhysicalTileSizeY (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_PhysicalTileSizeY (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_FiducialMark (
+        enum CogCalibCheckerboardFiducialConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_FiducialMark (
+        enum CogCalibCheckerboardFiducialConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_FeatureFinder (
+        enum CogCalibCheckerboardFeatureFinderConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_FeatureFinder (
+        enum CogCalibCheckerboardFeatureFinderConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LinescanDistanceToTarget (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_LinescanDistanceToTarget (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_LinescanDistanceToTargetEnabled (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_LinescanDistanceToTargetEnabled (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_NumPoints (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_UncalibratedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_UncalibratedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_RawCalibratedPointX (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall get_RawCalibratedPointY (
+        long Index,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetUncalibratedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall GetRawCalibratedPoint (
+        long Index,
+        double * X,
+        double * Y ) = 0;
+    virtual HRESULT __stdcall get_DOFsToCompute (
+        enum CogCalibCheckerboardDOFConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_DOFsToCompute (
+        enum CogCalibCheckerboardDOFConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputationMode (
+        enum CogCalibFixComputationModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_ComputationMode (
+        enum CogCalibFixComputationModeConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginX (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginX (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginY (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginY (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedOriginSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedOriginSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedXAxisRotation (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedXAxisRotation (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_CalibratedXAxisRotationSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibratedXAxisRotationSpace (
+        enum CogCalibCheckerboardAdjustmentSpaceConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_SwapCalibratedHandedness (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_SwapCalibratedHandedness (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Calibrated (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall GetComputedUncalibratedFromCalibratedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall GetComputedUncalibratedFromRawCalibratedTransform (
+        struct ICogTransform2D * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ComputedRMSError (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall GetInfoStrings (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_WarpParams (
+        struct ICogCalibCheckerboardWarpParams * * pVal ) = 0;
+    virtual HRESULT __stdcall Calibrate ( ) = 0;
+    virtual HRESULT __stdcall Uncalibrate ( ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("e48efda6-ce99-4b8d-b774-20a8b328d5fc"))
+ICogCalibCheckerboardTool_Disp : ICogCalibCheckerboardTool
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CognexCalibFix =
+    {0x93c44d05,0xb9c7,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureParams =
+    {0x5bfd16b3,0xc432,0x4210,{0xbe,0xae,0xee,0x72,0x1e,0x09,0x4f,0xbc}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixture =
+    {0xb230a183,0xd217,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixture =
+    {0xb230a184,0xd217,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixtureParams =
+    {0xd579b3c0,0xd232,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureTool =
+    {0x93c44d11,0xb9c7,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixtureTool =
+    {0x93c44d12,0xb9c7,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogNPointToNPoint =
+    {0x770734a3,0xbd16,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogNPointToNPoint =
+    {0x770734a4,0xbd16,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPointResult =
+    {0xc5b48694,0xcef6,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPointParams =
+    {0x498ad78e,0x1c6e,0x48ea,{0x94,0xd3,0x4c,0xf4,0x1a,0xd9,0x2a,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPoint =
+    {0x444cacd3,0xcf00,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixtureNPointToNPoint =
+    {0x444cacd4,0xcf00,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixtureNPointToNPointParams =
+    {0x036f2291,0xc34b,0x11d5,{0xbd,0x3e,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixtureNPointToNPointResult =
+    {0xc5b48695,0xcef6,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPointTool =
+    {0xad66f993,0xbd1a,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogFixtureNPointToNPointTool =
+    {0xad66f994,0xbd1a,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPointRunParams =
+    {0x5b922ac3,0xd219,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibNPointToNPointRunParams =
+    {0x5b922ac4,0xd219,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPointParams =
+    {0xc1b70e11,0xbdd1,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPoint =
+    {0x95e5df14,0xca6a,0x11d5,{0xbd,0x41,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibNPointToNPoint =
+    {0x95e5df15,0xca6a,0x11d5,{0xbd,0x41,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibNPointToNPointParams =
+    {0x036f2290,0xc34b,0x11d5,{0xbd,0x3e,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPointTool =
+    {0x770734a6,0xbd16,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibNPointToNPointTool =
+    {0x770734a7,0xbd16,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardRunParams =
+    {0xee4aad2c,0xac2c,0x4a73,{0xb8,0x06,0x6d,0x8f,0xaf,0x93,0x72,0xf4}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibCheckerboardRunParams =
+    {0x40f09c13,0x26ee,0x4212,{0xbf,0xf0,0x9f,0x2b,0xde,0x5b,0x67,0x0f}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardWarpParams =
+    {0xefcce36c,0x119d,0x4268,{0xb4,0xe3,0x35,0xb7,0xc0,0xba,0xc8,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardParams =
+    {0xd38b9ed0,0x2dc8,0x4397,{0x81,0x40,0x40,0x54,0x6c,0xd5,0x95,0x34}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboard =
+    {0xdcbfa9af,0x4b3e,0x42cb,{0xa5,0x82,0xff,0x07,0x69,0x01,0x7a,0xb6}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibCheckerboard =
+    {0x7c567de7,0x8e8c,0x4fff,{0x96,0x1f,0xb5,0x13,0xca,0x94,0x02,0x38}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibCheckerboardParams =
+    {0x60465363,0x7df5,0x423b,{0xb4,0x36,0xb2,0x50,0xb0,0xb8,0x6e,0x1d}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibCheckerboardWarpParams =
+    {0xa8a2e0eb,0xafcc,0x4cde,{0x8e,0xa7,0x77,0x78,0x66,0x99,0x97,0x23}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardTool =
+    {0x3740a525,0x0650,0x4e05,{0x99,0x06,0xfa,0x48,0x25,0xc8,0xb9,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_CogCalibCheckerboardTool =
+    {0x1b710259,0xce99,0x4b8d,{0xb7,0x74,0x20,0xa8,0xb3,0x28,0xd5,0xfc}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixture_Disp =
+    {0x4dcf5e7b,0xd217,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureParams_Disp =
+    {0x2a864c3f,0xd232,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureTool_Disp =
+    {0x6c3bb2ed,0xb9c7,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogNPointToNPoint_Disp =
+    {0x88f8cb5b,0xbd16,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPoint_Disp =
+    {0xbbb3532b,0xcf00,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPointParams_Disp =
+    {0xfc90dd6e,0xc34b,0x11d5,{0xbd,0x3e,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPointResult_Disp =
+    {0x3a4b796a,0xcef6,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogFixtureNPointToNPointTool_Disp =
+    {0x5299066b,0xbd1a,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPointRunParams_Disp =
+    {0xa46dd53b,0xd219,0x11d5,{0xbd,0x43,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPoint_Disp =
+    {0x6a1a20ea,0xca6a,0x11d5,{0xbd,0x41,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPointParams_Disp =
+    {0xfc90dd6f,0xc34b,0x11d5,{0xbd,0x3e,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibNPointToNPointTool_Disp =
+    {0x88f8cb58,0xbd16,0x11d5,{0xbd,0x3d,0x00,0x10,0x4b,0x1c,0xaa,0x62}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardRunParams_Disp =
+    {0xbf0f63ec,0x26ee,0x4212,{0xbf,0xf0,0x9f,0x2b,0xde,0x5b,0x67,0x0f}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboard_Disp =
+    {0x83a98218,0x8e8c,0x4fff,{0x96,0x1f,0xb5,0x13,0xca,0x94,0x02,0x38}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardParams_Disp =
+    {0x9fb9ac9c,0x7df5,0x423b,{0xb4,0x36,0xb2,0x50,0xb0,0xb8,0x6e,0x1d}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardWarpParams_Disp =
+    {0x575d1f14,0xafcc,0x4cde,{0x8e,0xa7,0x77,0x78,0x66,0x99,0x97,0x23}};
+extern "C" const GUID __declspec(selectany) IID_ICogCalibCheckerboardTool_Disp =
+    {0xe48efda6,0xce99,0x4b8d,{0xb7,0x74,0x20,0xa8,0xb3,0x28,0xd5,0xfc}};
+
+#pragma pack(pop)

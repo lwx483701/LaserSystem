@@ -1,0 +1,785 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (1cd825b6).
+//
+// cogxidb.tlh
+//
+// C++ source equivalent of Win32 type library Cognex_6_2_32-bit\cogxidb.dll
+// compiler-generated file created 02/26/18 at 16:40:48 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Program Files\Cognex\VisionPro\bin\cogxstd.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7ed6b616-8e69-4b2a-b004-2c21b0cb76fa"))
+/* dual interface */ ICogImageFileProvider;
+struct __declspec(uuid("960d9120-0aa7-4f1f-afc6-d61ee5b24885"))
+/* dual interface */ ICogImageFileCDB;
+struct __declspec(uuid("0ca8eeab-494f-4cc8-afc9-49f296c85dd6"))
+/* dual interface */ ICogImageFileBMP;
+struct __declspec(uuid("fe20cd5f-1925-43a8-baf2-bcfe4f8a553c"))
+/* dual interface */ ICogImageFilePNG;
+struct __declspec(uuid("36551d06-cc7d-4185-82f0-29f2ebf25eb1"))
+/* dual interface */ ICogImageFileJPEG;
+struct __declspec(uuid("7a8fa7b2-1623-4d92-a164-79cd8c353e92"))
+/* dual interface */ ICogImageFileTIFF;
+struct __declspec(uuid("a136fdeb-2569-4bdf-9d81-b7d7c51c88f1"))
+/* dual interface */ ICogImageFile;
+struct /* coclass */ CogImageFile;
+struct __declspec(uuid("a85eaa06-6009-484b-8e66-ea81545938c7"))
+/* dual interface */ ICogImageFileTool;
+struct __declspec(uuid("8983c1de-51bb-4a5c-8880-70c548d9ace5"))
+/* interface */ ICogImageFileEnumerator;
+struct /* coclass */ CogImageFileTool;
+struct /* coclass */ CogImageFileCDB;
+struct /* coclass */ CogImageFileBMP;
+struct /* coclass */ CogImageFilePNG;
+struct /* coclass */ CogImageFileJPEG;
+struct /* coclass */ CogImageFileTIFF;
+struct /* coclass */ CogImageFileEnumerator;
+struct /* coclass */ CogImageFileProvider;
+struct __declspec(uuid("47c2d374-1870-4131-bd12-0866cc89bfce"))
+/* interface */ ICogImageFile_Disp;
+struct __declspec(uuid("7486fa09-97f0-432c-8ca0-9f426ef89c61"))
+/* interface */ ICogImageFileTool_Disp;
+struct __declspec(uuid("ff714442-c447-4048-9c90-53773988ca91"))
+/* interface */ ICogImageFileCDB_Disp;
+struct __declspec(uuid("1675f146-b5e9-4141-a492-dd4f0a4f2e3e"))
+/* interface */ ICogImageFileBMP_Disp;
+struct __declspec(uuid("ca5f3d73-c512-4129-8280-9f6e74e61898"))
+/* interface */ ICogImageFilePNG_Disp;
+struct __declspec(uuid("86675c88-f816-4f19-a918-0b9d98e86d9c"))
+/* interface */ ICogImageFileJPEG_Disp;
+struct __declspec(uuid("e3c10f8a-b4d4-4871-9813-cd5f90100d14"))
+/* interface */ ICogImageFileTIFF_Disp;
+struct __declspec(uuid("cd706491-ebfa-4380-b624-863b21dc819f"))
+/* interface */ ICogImageFileEnumerator_Disp;
+struct __declspec(uuid("4e29778e-c413-46c0-bf10-796b010a48d8"))
+/* interface */ ICogImageFileProvider_Disp;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICogImageFileProvider, __uuidof(ICogImageFileProvider));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileCDB, __uuidof(ICogImageFileCDB));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileBMP, __uuidof(ICogImageFileBMP));
+_COM_SMARTPTR_TYPEDEF(ICogImageFilePNG, __uuidof(ICogImageFilePNG));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileJPEG, __uuidof(ICogImageFileJPEG));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileTIFF, __uuidof(ICogImageFileTIFF));
+_COM_SMARTPTR_TYPEDEF(ICogImageFile, __uuidof(ICogImageFile));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileTool, __uuidof(ICogImageFileTool));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileEnumerator, __uuidof(ICogImageFileEnumerator));
+_COM_SMARTPTR_TYPEDEF(ICogImageFile_Disp, __uuidof(ICogImageFile_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileTool_Disp, __uuidof(ICogImageFileTool_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileCDB_Disp, __uuidof(ICogImageFileCDB_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileBMP_Disp, __uuidof(ICogImageFileBMP_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFilePNG_Disp, __uuidof(ICogImageFilePNG_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileJPEG_Disp, __uuidof(ICogImageFileJPEG_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileTIFF_Disp, __uuidof(ICogImageFileTIFF_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileEnumerator_Disp, __uuidof(ICogImageFileEnumerator_Disp));
+_COM_SMARTPTR_TYPEDEF(ICogImageFileProvider_Disp, __uuidof(ICogImageFileProvider_Disp));
+
+//
+// Type library items
+//
+
+enum CogImageFileModeConstants
+{
+    cogImageFileModeClosed = 1,
+    cogImageFileModeRead = 2,
+    cogImageFileModeWrite = 3,
+    cogImageFileModeUpdate = 4
+};
+
+enum CogImageFileProviderStateIDs
+{
+    cogImageFileProvider_Count = 16916487,
+    cogImageFileProvider_OpenMode = 16883768,
+    cogImageFileProvider_FileName = 16883769
+};
+
+struct __declspec(uuid("7ed6b616-8e69-4b2a-b004-2c21b0cb76fa"))
+ICogImageFileProvider : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct ICogImage * * pvarRet ) = 0;
+    virtual HRESULT __stdcall get_FileName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_OpenMode (
+        enum CogImageFileModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall get_FileTypes (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Description (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Open (
+        BSTR FileName,
+        enum CogImageFileModeConstants Mode ) = 0;
+    virtual HRESULT __stdcall Close ( ) = 0;
+    virtual HRESULT __stdcall Append (
+        struct ICogImage * NewImage ) = 0;
+    virtual HRESULT __stdcall Delete (
+        SAFEARRAY * * ImageIndices ) = 0;
+};
+
+struct __declspec(uuid("960d9120-0aa7-4f1f-afc6-d61ee5b24885"))
+ICogImageFileCDB : ICogImageFileProvider
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall ReadComment (
+        long ImageIndex,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall AppendImageAndComment (
+        struct ICogImage * NewImage,
+        BSTR Comment ) = 0;
+};
+
+enum CogImageFileBMPStateIDs
+{
+    cogImageFileBMP_XPelsPerMeter = 16883805,
+    cogImageFileBMP_YPelsPerMeter = 16883806
+};
+
+struct __declspec(uuid("0ca8eeab-494f-4cc8-afc9-49f296c85dd6"))
+ICogImageFileBMP : ICogImageFileProvider
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_XPelsPerMeter (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_XPelsPerMeter (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_YPelsPerMeter (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_YPelsPerMeter (
+        long pVal ) = 0;
+};
+
+struct __declspec(uuid("fe20cd5f-1925-43a8-baf2-bcfe4f8a553c"))
+ICogImageFilePNG : ICogImageFileProvider
+{};
+
+enum CogImageFileJPEGStateIDs
+{
+    cogImageFileJPEG_Quality = 16883805
+};
+
+struct __declspec(uuid("36551d06-cc7d-4185-82f0-29f2ebf25eb1"))
+ICogImageFileJPEG : ICogImageFileProvider
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Quality (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Quality (
+        long pVal ) = 0;
+};
+
+struct __declspec(uuid("7a8fa7b2-1623-4d92-a164-79cd8c353e92"))
+ICogImageFileTIFF : ICogImageFileProvider
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall ReadTag (
+        long ImageIndex,
+        long Tag,
+        VARIANT * pVal ) = 0;
+};
+
+enum CogImageFileStateIDs
+{
+    cogImageFile_Count = 16916487,
+    cogImageFile_OpenMode = 16883772,
+    cogImageFile_FileName = 16883773,
+    cogImageFile_Provider = 16883774
+};
+
+struct __declspec(uuid("a136fdeb-2569-4bdf-9d81-b7d7c51c88f1"))
+ICogImageFile : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall get_FileName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_OpenMode (
+        enum CogImageFileModeConstants * pVal ) = 0;
+    virtual HRESULT __stdcall get_FilterText (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Open (
+        BSTR FileName,
+        enum CogImageFileModeConstants Mode ) = 0;
+    virtual HRESULT __stdcall Close ( ) = 0;
+    virtual HRESULT __stdcall Append (
+        struct ICogImage * NewImage ) = 0;
+    virtual HRESULT __stdcall get_Provider (
+        struct ICogImageFileProvider * * pVal ) = 0;
+    virtual HRESULT __stdcall get_SupportedFileTypes (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall Delete (
+        SAFEARRAY * * ImageIndices ) = 0;
+    virtual HRESULT __stdcall DeleteImage (
+        long ImageIndex ) = 0;
+};
+
+struct __declspec(uuid("b83d2c8b-1870-4131-bd12-0866cc89bfce"))
+CogImageFile;
+    // [ default ] interface ICogImageFile
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+enum CogImageFileErrConstants
+{
+    e_CogImageFile_MultipleImagesNotSupported = -2147205120,
+    e_CogImageFile_UnknownImageFileExtension = -2147205119,
+    e_CogImageFile_NoOpenImageFile = -2147205118
+};
+
+enum CogFAs_ImageFileTool
+{
+    cogFA_ImageFileTool_Indices = -2147483648
+};
+
+enum CogImageFileToolStateIDs
+{
+    cogImageFileTool_RunStatus = 16896000,
+    cogImageFileTool_ToolName = 16896002,
+    cogImageFileTool_LastRunRecordEnable = 16896004,
+    cogImageFileTool_LastRunRecordDiagEnable = 16896005,
+    cogImageFileTool_CurrentRecordEnable = 16896006,
+    cogImageFileTool_Operator = 16883714,
+    cogImageFileTool_CurrentImageIndex = 16883715,
+    cogImageFileTool_NextImageIndex = 16883726,
+    cogImageFileTool_ImageIndexIncrement = 16883728,
+    cogImageFileTool_InputImage = 16883739,
+    cogImageFileTool_OutputImage = 16883775
+};
+
+enum CogImageFileLastRunRecordConstants
+{
+    cogImageFileLastRunRecordNone = 0,
+    cogImageFileLastRunRecordOutputImage = 1,
+    cogImageFileLastRunRecordAll = -1
+};
+
+enum CogImageFileLastRunRecordDiagConstants
+{
+    cogImageFileLastRunRecordDiagNone = 0,
+    cogImageFileLastRunRecordDiagAll = -1
+};
+
+enum CogImageFileCurrentRecordConstants
+{
+    cogImageFileCurrentRecordNone = 0,
+    cogImageFileCurrentRecordInputImage = 1,
+    cogImageFileCurrentRecordAll = -1
+};
+
+struct __declspec(uuid("a85eaa06-6009-484b-8e66-ea81545938c7"))
+ICogImageFileTool : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RunStatus (
+        struct ICogRunStatus * * pVal ) = 0;
+    virtual HRESULT __stdcall Run ( ) = 0;
+    virtual HRESULT __stdcall get_ToolName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ToolName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordEnable (
+        enum CogImageFileLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnable (
+        enum CogImageFileLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnable (
+        enum CogImageFileLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnable (
+        enum CogImageFileLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnable (
+        enum CogImageFileCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnable (
+        enum CogImageFileCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_Operator (
+        struct ICogImageFile * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_Operator (
+        struct ICogImageFile * pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentImageIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_NextImageIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_NextImageIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_ImageIndexIncrement (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ImageIndexIncrement (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_OutputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall get_InputImage (
+        struct ICogImage * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_InputImage (
+        struct ICogImage * pVal ) = 0;
+};
+
+struct __declspec(uuid("8983c1de-51bb-4a5c-8880-70c548d9ace5"))
+ICogImageFileEnumerator : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Init (
+        struct ICogImageFileProvider * Provider ) = 0;
+};
+
+struct __declspec(uuid("8b7905f6-97f0-432c-8ca0-9f426ef89c61"))
+CogImageFileTool;
+    // [ default ] interface ICogImageFileTool
+    // interface ICogTool
+    // interface ICogChangeEventConfiguration
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // [ default, source ] dispinterface ICogToolEvents
+
+struct __declspec(uuid("008ebbbd-c447-4048-9c90-53773988ca91"))
+CogImageFileCDB;
+    // [ default ] interface ICogImageFileCDB
+    // interface ICogImageFileProvider
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("e98a0eb9-b5e9-4141-a492-dd4f0a4f2e3e"))
+CogImageFileBMP;
+    // [ default ] interface ICogImageFileBMP
+    // interface ICogImageFileProvider
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("35a0c28c-c512-4129-8280-9f6e74e61898"))
+CogImageFilePNG;
+    // [ default ] interface ICogImageFilePNG
+    // interface ICogImageFileProvider
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("7998a377-f816-4f19-a918-0b9d98e86d9c"))
+CogImageFileJPEG;
+    // [ default ] interface ICogImageFileJPEG
+    // interface ICogImageFileProvider
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("1c3ef075-b4d4-4871-9813-cd5f90100d14"))
+CogImageFileTIFF;
+    // [ default ] interface ICogImageFileTIFF
+    // interface ICogImageFileProvider
+    // interface ICogObject
+    // interface ICogPersistArchive
+    // interface IPersistStream
+    // interface IPersist
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("328f9b6e-ebfa-4380-b624-863b21dc819f"))
+CogImageFileEnumerator;
+    // [ default ] interface ICogImageFileEnumerator
+    // interface IEnumVARIANT
+    // interface ICogObject
+
+struct __declspec(uuid("b1d68871-c413-46c0-bf10-796b010a48d8"))
+CogImageFileProvider;
+    // [ default ] interface ICogImageFileProvider
+    // interface ICogChangeEventConfiguration
+    // [ default, source ] dispinterface ICogChangeEvent
+
+struct __declspec(uuid("47c2d374-1870-4131-bd12-0866cc89bfce"))
+ICogImageFile_Disp : ICogImageFile
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("7486fa09-97f0-432c-8ca0-9f426ef89c61"))
+ICogImageFileTool_Disp : ICogImageFileTool
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordEnableBase (
+        enum CogToolLastRunRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_LastRunRecordDiagEnableBase (
+        enum CogToolLastRunRecordDiagConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants * pVal ) = 0;
+    virtual HRESULT __stdcall put_CurrentRecordEnableBase (
+        enum CogToolCurrentRecordConstants pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedInputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ExposedOutputProperties (
+        struct ICogStringCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateCurrentRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateLastRunRecord (
+        struct ICogRecord * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ControlProgID (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControlProgID (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("ff714442-c447-4048-9c90-53773988ca91"))
+ICogImageFileCDB_Disp : ICogImageFileCDB
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("1675f146-b5e9-4141-a492-dd4f0a4f2e3e"))
+ICogImageFileBMP_Disp : ICogImageFileBMP
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("ca5f3d73-c512-4129-8280-9f6e74e61898"))
+ICogImageFilePNG_Disp : ICogImageFilePNG
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("86675c88-f816-4f19-a918-0b9d98e86d9c"))
+ICogImageFileJPEG_Disp : ICogImageFileJPEG
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("e3c10f8a-b4d4-4871-9813-cd5f90100d14"))
+ICogImageFileTIFF_Disp : ICogImageFileTIFF
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_HasChanged (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasChanged (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+struct __declspec(uuid("cd706491-ebfa-4380-b624-863b21dc819f"))
+ICogImageFileEnumerator_Disp : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetLocalComputerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Clone (
+        struct ICogObject * * pVal ) = 0;
+    virtual HRESULT __stdcall CreateObject (
+        BSTR ProgIDOrClassID,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Tag (
+        VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("4e29778e-c413-46c0-bf10-796b010a48d8"))
+ICogImageFileProvider_Disp : ICogImageFileProvider
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SuspendEventDelivery ( ) = 0;
+    virtual HRESULT __stdcall ResumeAndFireEvent ( ) = 0;
+    virtual HRESULT __stdcall get_EventDeliverySuspended (
+        long * nSuspendCount ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CognexImageFile =
+    {0x295c0a37,0xc78b,0x4d1d,{0xb0,0x98,0xcf,0x04,0xcb,0x6d,0x67,0xaf}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileProvider =
+    {0x7ed6b616,0x8e69,0x4b2a,{0xb0,0x04,0x2c,0x21,0xb0,0xcb,0x76,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileCDB =
+    {0x960d9120,0x0aa7,0x4f1f,{0xaf,0xc6,0xd6,0x1e,0xe5,0xb2,0x48,0x85}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileBMP =
+    {0x0ca8eeab,0x494f,0x4cc8,{0xaf,0xc9,0x49,0xf2,0x96,0xc8,0x5d,0xd6}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFilePNG =
+    {0xfe20cd5f,0x1925,0x43a8,{0xba,0xf2,0xbc,0xfe,0x4f,0x8a,0x55,0x3c}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileJPEG =
+    {0x36551d06,0xcc7d,0x4185,{0x82,0xf0,0x29,0xf2,0xeb,0xf2,0x5e,0xb1}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileTIFF =
+    {0x7a8fa7b2,0x1623,0x4d92,{0xa1,0x64,0x79,0xcd,0x8c,0x35,0x3e,0x92}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFile =
+    {0xa136fdeb,0x2569,0x4bdf,{0x9d,0x81,0xb7,0xd7,0xc5,0x1c,0x88,0xf1}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFile =
+    {0xb83d2c8b,0x1870,0x4131,{0xbd,0x12,0x08,0x66,0xcc,0x89,0xbf,0xce}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileTool =
+    {0xa85eaa06,0x6009,0x484b,{0x8e,0x66,0xea,0x81,0x54,0x59,0x38,0xc7}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileEnumerator =
+    {0x8983c1de,0x51bb,0x4a5c,{0x88,0x80,0x70,0xc5,0x48,0xd9,0xac,0xe5}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileTool =
+    {0x8b7905f6,0x97f0,0x432c,{0x8c,0xa0,0x9f,0x42,0x6e,0xf8,0x9c,0x61}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileCDB =
+    {0x008ebbbd,0xc447,0x4048,{0x9c,0x90,0x53,0x77,0x39,0x88,0xca,0x91}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileBMP =
+    {0xe98a0eb9,0xb5e9,0x4141,{0xa4,0x92,0xdd,0x4f,0x0a,0x4f,0x2e,0x3e}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFilePNG =
+    {0x35a0c28c,0xc512,0x4129,{0x82,0x80,0x9f,0x6e,0x74,0xe6,0x18,0x98}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileJPEG =
+    {0x7998a377,0xf816,0x4f19,{0xa9,0x18,0x0b,0x9d,0x98,0xe8,0x6d,0x9c}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileTIFF =
+    {0x1c3ef075,0xb4d4,0x4871,{0x98,0x13,0xcd,0x5f,0x90,0x10,0x0d,0x14}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileEnumerator =
+    {0x328f9b6e,0xebfa,0x4380,{0xb6,0x24,0x86,0x3b,0x21,0xdc,0x81,0x9f}};
+extern "C" const GUID __declspec(selectany) CLSID_CogImageFileProvider =
+    {0xb1d68871,0xc413,0x46c0,{0xbf,0x10,0x79,0x6b,0x01,0x0a,0x48,0xd8}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFile_Disp =
+    {0x47c2d374,0x1870,0x4131,{0xbd,0x12,0x08,0x66,0xcc,0x89,0xbf,0xce}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileTool_Disp =
+    {0x7486fa09,0x97f0,0x432c,{0x8c,0xa0,0x9f,0x42,0x6e,0xf8,0x9c,0x61}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileCDB_Disp =
+    {0xff714442,0xc447,0x4048,{0x9c,0x90,0x53,0x77,0x39,0x88,0xca,0x91}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileBMP_Disp =
+    {0x1675f146,0xb5e9,0x4141,{0xa4,0x92,0xdd,0x4f,0x0a,0x4f,0x2e,0x3e}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFilePNG_Disp =
+    {0xca5f3d73,0xc512,0x4129,{0x82,0x80,0x9f,0x6e,0x74,0xe6,0x18,0x98}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileJPEG_Disp =
+    {0x86675c88,0xf816,0x4f19,{0xa9,0x18,0x0b,0x9d,0x98,0xe8,0x6d,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileTIFF_Disp =
+    {0xe3c10f8a,0xb4d4,0x4871,{0x98,0x13,0xcd,0x5f,0x90,0x10,0x0d,0x14}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileEnumerator_Disp =
+    {0xcd706491,0xebfa,0x4380,{0xb6,0x24,0x86,0x3b,0x21,0xdc,0x81,0x9f}};
+extern "C" const GUID __declspec(selectany) IID_ICogImageFileProvider_Disp =
+    {0x4e29778e,0xc413,0x46c0,{0xbf,0x10,0x79,0x6b,0x01,0x0a,0x48,0xd8}};
+
+#pragma pack(pop)

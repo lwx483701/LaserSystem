@@ -1,0 +1,250 @@
+_DrillModel1,Offset0
+__C release11 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release11 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release11 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release11 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release11 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release11 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release6 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
+_DrillModel1,Offset0
+__C release15 Period100
+__C release9 Period100
+__C release8 Period100
+__C release8 Period100
