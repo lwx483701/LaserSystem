@@ -37,10 +37,6 @@ MFC
 
 支持sqlserver、mysql数据库，其他数据库未测试，脚本在docs/sql；
 
-前端采用 MFC等
-
-后端采用 asp.net mvc core 2.2、sqlsugar、fluentValidation、nlog、Jil、DI、Ganss、雪花算法、Xunit、npoi（因在linux上报错，后期替换掉，bug修复（https://www.cnblogs.com/Robbery/p/10115234.html））等
-
 申明
 本代码只做学习交流使用！
 
